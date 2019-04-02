@@ -59,13 +59,12 @@
         <form class="knitting-order" action="#" method="GET">
             <p class="knitting-order__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую
                 форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-            <fieldset class="form form--type">
+            <fieldset class="form form--kind">
                 <div class="form__title">Тип</div>
-                <label for="typeInterior"></label>
-                <input class="form__radio" id="typeInterior" type="radio" name="type" value="interior">Аксессуар для
-                интерьера
-                <label for="typeToy"></label>
-                <input class="form__radio" id="typeToy" type="radio" name="type" value="toy">Детская игрушка
+                <input class="form__radio" id="typeInterior" type="radio" name="type" value="interior">
+                <label for="typeInterior">Аксессуар для интерьера</label>
+                <input class="form__radio" id="typeToy" type="radio" name="type" value="toy">
+                <label for="typeToy">Детская игрушка</label>
             </fieldset>
             <fieldset class="form form--color">
                 <div class="form__title">Цвет</div>
@@ -78,18 +77,20 @@
                 <input class="form__checkbox" id="colorPink" type="checkbox" name="pink" value="color">
                 <label for="colorPink">Розовый</label>
                 <input class="form__checkbox" id="colorTiffani" type="checkbox" name="tiffani" value="color">
-                <label for="colorTiffani">"Тиффани"<label for="colorTiffani"></label>
-                    <input class="form__checkbox" id="colorOrange" type="checkbox" name="orange" value="color">
-                    <label for="colorOrange">Оранжевый</label>
+                <label for="colorTiffani">"Тиффани"</label>
+                <input class="form__checkbox" id="colorOrange" type="checkbox" name="orange" value="color">
+                <label for="colorOrange">Оранжевый</label>
             </fieldset>
             <fieldset class="form form--name">
                 <div class="form__title">ФИО</div>
                 <input class="form__checkbox" id="textName" type="text" name="name" placeholder="Введите ваше имя*">
                 <label for="textName">Имя</label>
                 <input class="form__checkbox" id="textSecondname" type="text" name="Secondname"
-                    placeholder="Введите вашу фамилию*"><label for="textSecondname">Фамилия</label>
+                    placeholder="Введите вашу фамилию*">
+                <label for="textSecondname">Фамилия</label>
                 <input class="form__checkbox" id="textPatronymic" type="text" name="Patronymic"
-                    placeholder="Отчество, если желаете"><label for="textPatronymic">Отчество</label>
+                    placeholder="Отчество, если желаете">
+                <label for="textPatronymic">Отчество</label>
             </fieldset>
             <fieldset class="form form--contacts">
 
@@ -101,12 +102,12 @@
                     <div class="form__title">e-mail</div>
                 </label>
                 <input class="form__mail" id="userMail" type="email" name="email" placeholder="Ваш Email*" required>
-                <label class="form__textarea">
+                <label class="form__textarea" id="add-info">
                     <div>Доп</div>
+                </label>
                     <textarea class="form__add-info" name="add-info" cols="30" rows="10"
                         placeholder="Опишите все ваши пожелания к заказу">
                 </textarea>
-                </label>
             </fieldset>
             <button class="form__btn button">Отправить заказ</button>
             <div class="form__add-text">*Поля обязательны для заполнения</div>
