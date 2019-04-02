@@ -12,21 +12,27 @@
             <img class="page-header__logo-img" src="#" alt="Логотип">
         </a>
         <nav class="main-nav">
-            <button class="main-nav__toggle" type="button">открыть меню</button>
-            <ul class="main-nav__list site-list">
-                <li class="site-list__item">
-                    <a href="#">Каталог товаров</a>
-                </li>
-                <li class="site-list__item">
-                    <a href="#">Вязание на заказ</a>
-                </li>
-                <li class="site-list__item">
-                    <a href="#">Новые поступления</a>
-                </li>
-                <li class="site-list__item">
-                    <a href="#">Распродажа</a>
-                </li>
-            </ul>
+            <button class="main-nav__toggle hidden" type="button">открыть меню</button>
+            <div class="main-nav__wrap1">
+                <ul class="main-nav__top-list site-list">
+                    <li class="site-list__item">
+                        <a href="#">Каталог товаров</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="#">Вязание на заказ</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="main-nav__wrap2">
+                <ul class="main-nav__bottom-list site-list">
+                    <li class="site-list__item">
+                        <a href="#">Новые поступления</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="#">Распродажа</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
         <div class="page-header__search">
             <a href="#">
@@ -40,17 +46,16 @@
                     Корзина: пока пуста
                 </div>
             </a>
-            <p class="page-header__text--small"></p>
+            <p class="page-header__text--small">Бесплатная доставка по России</p>
         </div>
-        <section class="header__services">
-            <h1 class="header__title">Вязание на заказ</h1>
-            <div class="header__main-image">
+    </header>
+    <main class="main-form">
+        <div class="main-form__wrap">
+            <h1 class="main-form__title">Вязание на заказ</h1>
+            <div class="main-form__image">
                 <img src="#" alt="">
             </div>
-        </section>
-    </header>
-    <main class="page-main">
-
+        </div>
         <form class="knitting-order" action="#" method="GET">
             <p class="knitting-order__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую
                 форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
@@ -74,8 +79,8 @@
                 <label for="colorPink">Розовый</label>
                 <input class="form__checkbox" id="colorTiffani" type="checkbox" name="tiffani" value="color">
                 <label for="colorTiffani">"Тиффани"<label for="colorTiffani"></label>
-                <input class="form__checkbox" id="colorOrange" type="checkbox" name="orange" value="color">
-                <label for="colorOrange">Оранжевый</label>
+                    <input class="form__checkbox" id="colorOrange" type="checkbox" name="orange" value="color">
+                    <label for="colorOrange">Оранжевый</label>
             </fieldset>
             <fieldset class="form form--name">
                 <div class="form__title">ФИО</div>
@@ -87,12 +92,17 @@
                     placeholder="Отчество, если желаете"><label for="textPatronymic">Отчество</label>
             </fieldset>
             <fieldset class="form form--contacts">
-               
+
                 <input class="form__phone" id="userPhone" type="text" name="phone" placeholder="+7xxx xx xx*" required>
-                <label for="userPhone"><div class="form__title">Тел</div></label>
-                <label for="userMail"><div class="form__title">e-mail</div></label>
+                <label for="userPhone">
+                    <div class="form__title">Тел</div>
+                </label>
+                <label for="userMail">
+                    <div class="form__title">e-mail</div>
+                </label>
                 <input class="form__mail" id="userMail" type="email" name="email" placeholder="Ваш Email*" required>
-                <label class="form__textarea"><div>Доп</div>
+                <label class="form__textarea">
+                    <div>Доп</div>
                     <textarea class="form__add-info" name="add-info" cols="30" rows="10"
                         placeholder="Опишите все ваши пожелания к заказу">
                 </textarea>
@@ -105,9 +115,9 @@
 
     <footer class="page-footer">
         <div class="footer__logo">
-            <a class="footer__logo-item"><img class="footer__logo-img" src="#" alt=""></a>
+            <a class="footer__column footer__column--left"><img class="footer__logo-img" src="#" alt=""></a>
         </div>
-        <div class="social-web">
+        <div class="footer__column footer__column--middle">
             <a class="footer__social-web-item" href="#"><img class="footer__social-img footer__social-img--inst" src="#"
                     alt="инстаграмм"></a>
             <a class="footer__social-web-item" href="#"><img class="footer__social-img footer__social-img--fb" src="#"
@@ -115,11 +125,9 @@
             <a class="footer__social-web-item" href="#"><img class="footer__social-img footer__social-img--tw" src="#"
                     alt="твиттер"></a>
         </div>
-        <div class="developer">
+        <div class="footer__column footer__column--right">
             <div class="footer__text">Разработано<a><img src="#" alt=""></a></div>
-
         </div>
-
     </footer>
 
 </body>

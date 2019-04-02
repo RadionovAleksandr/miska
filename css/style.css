@@ -1,0 +1,92 @@
+.hidden {
+  display: none;
+}
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.button {
+  display: inline-block;
+  padding: 13px 40px;
+  border-radius: 5px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+body {
+  font-size: 17px;
+  line-height: 24px;
+  color: black;
+  font-weight: normal;
+  text-align: left;
+}
+.page-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 1250px;
+  background-color: #f9f9f9;
+  background-image: url("../img/hero-desktop.jpg");
+}
+.page-header__wrap-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.main-nav {
+  margin-left: 100px;
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+}
+.page-header__logo {
+  margin: 10px auto;
+}
+.main-nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: flex-start;
+          flex-direction: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 370px;
+}
+.site-list__item {
+  font-weight: bold;
+  width: 185px;
+  padding: 10px 0;
+}
+.page-header__basket {
+  margin-left: auto;
+  margin-right: 100px;
+}
+.page-header__text--small {
+  font-size: 15px;
+  color: #444444;
+}
+.header__title {
+  width: 620px;
+  margin: 0 auto;
+  padding-top: 130px;
+  padding-bottom: 355px;
+  font-size: 53px;
+  line-height: 58.5px;
+  text-align: center;
+}
