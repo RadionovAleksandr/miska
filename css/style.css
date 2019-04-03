@@ -124,7 +124,7 @@ body {
 .page-main {
   background-image: url("../img/hero-desktop.jpg");
   background-repeat: no-repeat;
-  background-color: #f9f9f9;
+  background-color: white;
   width: 100%;
   max-width: 1250px;
   margin: 0 auto;
@@ -171,7 +171,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: white;
 }
 .sentence__product-week {
   width: 70px;
@@ -229,4 +228,115 @@ body {
 }
 .table-parameters__cell--width {
   width: 200px;
+}
+.about-us {
+  margin: 0 auto;
+}
+.about-us__title {
+  font-size: 53px;
+  margin-top: 65px;
+  margin-left: 175px;
+}
+.about-us__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 175px;
+}
+.about-us__list {
+  margin-top: 45px;
+  max-width: 350px;
+}
+.about-us__list-item {
+  font-size: 20px;
+  margin-top: 54px;
+  max-width: 210px;
+  font-weight: bold;
+}
+.reviews,
+.reviews__title,
+.reviews__text,
+.reviews__data-autor {
+  position: relative;
+  z-index: 10;
+}
+.reviews {
+  margin: 0 auto;
+  margin-top: 92px;
+  background-repeat: no-repeat;
+  margin-bottom: 70px;
+}
+.reviews__img {
+  position: absolute;
+  top: -80px;
+  max-width: 350px;
+}
+.reviews__title {
+  font-size: 53px;
+  margin-left: 175px;
+}
+.reviews__text {
+  font-size: 17px;
+  color: #444444;
+  max-width: 770;
+  margin-left: 175px;
+  margin-bottom: 110px;
+}
+.reviews__data-autor {
+  margin-top: 52px;
+  color: #444444;
+}
+.reviews__data-autor--bold {
+  color: black;
+  font-weight: bold;
+}
+.reviews__btn {
+  position: absolute;
+  top: -90px;
+  right: 0;
+  width: 175px;
+}
+.reviews__toggle {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 175px;
+  bottom: 0;
+  right: 0;
+}
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+.contacts__title {
+  font-size: 53px;
+  margin-top: 90px;
+}
+.contacts__address {
+  margin-left: 175px;
+  max-width: 350px;
+}
+.contacts__mail {
+  margin-top: 60px;
+  color: #444444;
+}
+.contacts__addres {
+  margin-top: 40px;
+  color: #444444;
+}
+.contacts__btn {
+  margin-top: 80px;
+  bottom: 0;
+  left: 0;
+}
+.page-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 70px;
 }

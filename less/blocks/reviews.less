@@ -1,0 +1,58 @@
+.reviews,
+.reviews__title,
+.reviews__text,
+.reviews__data-autor {
+    position: relative;
+    z-index : 10;
+}
+
+.reviews {
+    margin           : 0 auto;
+    margin-top       : 92px;
+    background-repeat: no-repeat;
+    margin-bottom    : 70px;
+
+    &__img {
+        position : absolute;
+        top      : -80px;
+        max-width: 350px;
+    }
+
+    &__title {
+        font-size  : 53px;
+        margin-left: 175px;
+    }
+
+    &__text {
+        font-size    : 17px;
+        color        : #444444;
+        max-width    : 770;
+        margin-left  : 175px;
+        margin-bottom: 110px;
+    }
+
+    &__data-autor {
+        margin-top: 52px;
+        color     : #444444;
+    }
+
+    &__data-autor--bold {
+        color      : black;
+        font-weight: bold;
+    }
+
+    &__btn {
+        position: absolute;
+        top     : -90px;
+        right   : 0;
+        width   : 175px;
+    }
+
+    &__toggle {
+        position: absolute;
+        display : flex;
+        width   : 175px;
+        bottom  : 0;
+        right   : 0;
+    }
+}
