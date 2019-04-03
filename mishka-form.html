@@ -7,50 +7,52 @@
 </head>
 
 <body>
+
     <header class="page-header">
-        <div class="page-header__wrap">
+        <div class="page-header__wrap page-header__wrap--top">
             <a class="page-header__logo" href="#">
                 <img class="page-header__logo-img" src="#" alt="Логотип">
             </a>
-            <nav class="main-nav">
+            <nav class="main-nav main-nav--top">
                 <button class="main-nav__toggle hidden" type="button">открыть меню</button>
-                <div class="main-nav__wrap main-nav__wrap--top">
-                    <ul class="main-nav__top-list site-list">
-                        <li class="site-list__item">
-                            <a href="#">Каталог товаров</a>
-                        </li>
-                        <li class="site-list__item">
-                            <a href="#">Вязание на заказ</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="main-nav__wrap main-nav__wrap--bottom">
-                    <ul class="main-nav__bottom-list site-list">
-                        <li class="site-list__item">
-                            <a href="#">Новые поступления</a>
-                        </li>
-                        <li class="site-list__item">
-                            <a href="#">Распродажа</a>
-                        </li>
-                    </ul>
-                </div>
+                <ul class="main-nav__list main-nav__list--top site-list">
+                    <li class="site-list__item">
+                        <a href="#">Каталог товаров</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="#">Вязание на заказ</a>
+                    </li>
+                </ul>
             </nav>
             <div class="page-header__search">
                 <a href="#">
-                    <img src="#" alt="">
+                    <img src="#" alt="Поиск">
                 </a>
             </div>
             <div class="basket">
-                <a href="#">
-                    <img src="#" alt="">
-                    <div class="basket__text">
+                <a class="basket__text">
+                    <div>
                         Корзина: пока пуста
                     </div>
                 </a>
-                <p class="basket__text--small">Бесплатная доставка по России</p>
             </div>
         </div>
+        <div class="page-header__wrap page-header__wrap--bottom">
+
+            <nav class="main-nav main-nav--bottom">
+                <ul class="main-nav__list main-nav__list--bottom site-list">
+                    <li class="site-list__item site-list__item--bottom">
+                        <a href="#">Новые поступления</a>
+                    </li>
+                    <li class="site-list__item site-list__item--bottom">
+                        <a href="#">Распродажа</a>
+                    </li>
+                </ul>
+            </nav>
+            <p class="page-header__text--small">Бесплатная доставка по России</p>
+        </div>
     </header>
+
     <main class="main-form">
         <div class="main-form__wrap">
             <h1 class="main-form__title">Вязание на заказ</h1>

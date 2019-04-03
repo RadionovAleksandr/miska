@@ -1,126 +1,232 @@
-.hidden {
-  display: none;
-}
-
 ul,
 li {
   list-style: none;
-  padding   : 0;
-  margin    : 0;
+  padding: 0;
+  margin: 0;
 }
-
 img {
-  width : 100%;
+  width: 100%;
   height: auto;
 }
-
 a {
   text-decoration: none;
-  color          : black;
+  color: black;
 }
-
 body {
-  font-size  : 17px;
+  font-size: 17px;
   line-height: 24px;
-  color      : black;
+  color: black;
   font-weight: normal;
-  text-align : left;
+  text-align: left;
 }
-
 .button {
-  display       : inline-block;
-  padding       : 13px 40px;
-  border-radius : 5px;
-  text-align    : center;
+  display: inline-block;
+  padding: 13px 40px;
+  text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
+  color: black;
+  border: 2px solid black;
+  background-color: inherit;
 }
-
-.button {
-  display       : inline-block;
-  padding       : 13px 40px;
-  border-radius : 5px;
-  text-align    : center;
-  vertical-align: middle;
-  text-transform: uppercase;
+.hidden {
+  display: none;
 }
-
-body {
-  font-size  : 17px;
-  line-height: 24px;
-  color      : black;
-  font-weight: normal;
-  text-align : left;
-}
-
 .page-header {
-  display              : -webkit-box;
-  display              : -ms-flexbox;
-  display              : flex;
-  -webkit-box-orient   : vertical;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction   : column;
-  flex-direction       : column;
-  width                : 1250px;
-  background-color     : #f9f9f9;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+  background-color: white;
 }
-
-.page-header__wrap-1 {
+.page-header__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-
-.main-nav {
-  margin-left              : 100px;
-  -webkit-box-ordinal-group: 0;
-  -ms-flex-order           : -1;
-  order                    : -1;
+.page-header__wrap--bottom {
+  background-color: #f9f9f9;
 }
-
 .page-header__logo {
-  margin: 10px auto;
+  margin: 0 auto;
+  padding: 10px;
+  width: 100px;
 }
-
-.main-nav__list {
-  display              : -webkit-box;
-  display              : -ms-flexbox;
-  display              : flex;
-  -webkit-box-orient   : vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction   : flex-start;
-  flex-direction       : flex-start;
-  -ms-flex-wrap        : wrap;
-  flex-wrap            : wrap;
-  width                : 370px;
+.page-header__search {
+  width: 85px;
+  line-height: 90px;
+  max-height: 90px;
+  margin-left: auto;
+  text-align: center;
+  vertical-align: middle;
 }
-
-.site-list__item {
-  font-weight: bold;
-  width      : 185px;
-  padding    : 10px 0;
-}
-
-.page-header__basket {
-  margin-left : auto;
-  margin-right: 100px;
-}
-
 .page-header__text--small {
+  margin: 0;
+  margin-left: auto;
+  margin-right: 83px;
+  padding: 25px 0;
+  font-weight: normal;
   font-size: 15px;
-  color    : #444444;
+  color: #444444;
 }
-
-.header__title {
-  width         : 620px;
-  margin        : 0 auto;
-  padding-top   : 130px;
-  padding-bottom: 355px;
-  font-size     : 53px;
-  line-height   : 58.5px;
-  text-align    : center;
+.main-nav--top {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
 }
-
+.main-nav {
+  width: 380px;
+  margin-left: 100px;
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+}
+.main-nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: flex-start;
+          flex-direction: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 370px;
+}
+.site-list__item {
+  text-align: center;
+  font-weight: bold;
+  width: 185px;
+  padding: 37px 0;
+}
+.site-list__item--bottom {
+  padding: 25px 0;
+}
+.basket {
+  font-weight: bold;
+  text-align: right;
+  margin-right: 80px;
+  padding: 37px 0;
+}
+.basket__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
 .page-main {
   background-image: url("../img/hero-desktop.jpg");
+  background-repeat: no-repeat;
+  background-color: #f9f9f9;
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+.service__title {
+  max-width: 620px;
+  min-width: 260px;
+  margin: 0 auto;
+  padding-top: 155px;
+  padding-bottom: 355px;
+  font-size: 53px;
+  line-height: 58.5px;
+  text-align: center;
+}
+.service__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  max-width: 1050px;
+}
+.service__item {
+  width: 50%;
+}
+.service__item--interior {
+  background-color: #63d1bb;
+}
+.service__item--toys {
+  background-color: #56c3b2;
+}
+.service__text {
+  width: 125px;
+  margin: 30px 0;
+  margin-left: 36px;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: bold;
+  color: white;
+}
+.sentence {
+  position: relative;
+  margin: 0 auto;
+  padding-top: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+}
+.sentence__product-week {
+  width: 70px;
+  margin-left: 40px;
+  margin-right: 64px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: #63d1bb;
+}
+.sentence__item {
+  width: 350px;
+  z-index: 10;
+}
+.sentence__title {
+  position: absolute;
+  left: 172px;
+  font-size: 53px;
+  margin-top: 0;
+  margin-bottom: 53px;
+}
+.sentence__text {
+  color: #444444;
+  line-height: 30px;
+  margin: 0;
+  margin-bottom: 56px;
+  margin-top: 100px;
+}
+.sentence__price {
+  margin-top: 110px;
+  margin-left: 75px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.sentence__order-week-btn {
+  margin-top: 35px;
+  padding: 16px 103px;
+}
+.sentence__img-box {
+  max-width: 525px;
+}
+.sentence__img {
+  position: relative;
+  top: -70px;
+  left: 0;
+}
+.table-parameters {
+  color: #444444;
+  border-spacing: 0px;
+}
+.table-parameters__cell {
+  width: 95px;
+  padding: 10px 0;
+  border-bottom: 2px solid #ececec;
+}
+.table-parameters__cell--width {
+  width: 200px;
 }

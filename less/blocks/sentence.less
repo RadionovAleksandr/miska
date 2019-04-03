@@ -1,0 +1,61 @@
+.sentence {
+    position        : relative;
+    margin          : 0 auto;
+    padding-top     : 130px;
+    display         : flex;
+    background-color: white;
+
+    &__product-week {
+        width         : 70px;
+        margin-left   : 40px;
+        margin-right  : 64px;
+        font-weight   : bold;
+        text-align    : center;
+        text-transform: uppercase;
+        color         : #63d1bb;
+    }
+
+    &__item {
+        width: 350px;
+        z-index: 10;
+    }
+
+    &__title {
+        position     : absolute;
+        left         : 172px;
+        font-size    : 53px;
+        margin-top   : 0;
+        margin-bottom: 53px;
+    }
+
+    &__text {
+        color        : #444444;
+        line-height  : 30px;
+        margin       : 0;
+        margin-bottom: 56px;
+        margin-top   : 100px;
+    }
+
+    &__price {
+        margin-top : 110px;
+        margin-left: 75px; //половина расстояния таблицы
+        font-size  : 20px;
+        font-weight: bold;
+    }
+
+    &__order-week-btn {
+        margin-top: 35px;
+        padding   : 16px 103px;
+    }
+
+    &__img-box {
+        max-width: 525px; //50%
+    }
+
+    &__img {
+        position: relative;
+        top     : -70px;
+        left    : 0;
+    }
+
+}

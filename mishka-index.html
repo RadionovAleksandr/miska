@@ -10,95 +10,99 @@
 </head>
 
 <body>
+    
     <header class="page-header">
-        <div class="page-header__wrap">
+        <div class="page-header__wrap page-header__wrap--top">
             <a class="page-header__logo" href="#">
                 <img class="page-header__logo-img" src="#" alt="Логотип">
             </a>
-            <nav class="main-nav">
+            <nav class="main-nav main-nav--top">
                 <button class="main-nav__toggle hidden" type="button">открыть меню</button>
-                <div class="main-nav__wrap main-nav__wrap--top">
-                    <ul class="main-nav__top-list site-list">
-                        <li class="site-list__item">
-                            <a href="#">Каталог товаров</a>
-                        </li>
-                        <li class="site-list__item">
-                            <a href="#">Вязание на заказ</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="main-nav__wrap main-nav__wrap--bottom">
-                    <ul class="main-nav__bottom-list site-list">
-                        <li class="site-list__item">
-                            <a href="#">Новые поступления</a>
-                        </li>
-                        <li class="site-list__item">
-                            <a href="#">Распродажа</a>
-                        </li>
-                    </ul>
-                </div>
+                <ul class="main-nav__list main-nav__list--top site-list">
+                    <li class="site-list__item">
+                        <a href="#">Каталог товаров</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="#">Вязание на заказ</a>
+                    </li>
+                </ul>
             </nav>
             <div class="page-header__search">
                 <a href="#">
-                    <img src="#" alt="">
+                    <img src="#" alt="Поиск">
                 </a>
             </div>
             <div class="basket">
-                <a href="#">
-                    <img src="#" alt="">
-                    <div class="basket__text">
+                <a class="basket__text">
+                    <div>
                         Корзина: пока пуста
                     </div>
                 </a>
-                <p class="basket__text--small">Бесплатная доставка по России</p>
             </div>
         </div>
+        <div class="page-header__wrap page-header__wrap--bottom">
+
+            <nav class="main-nav main-nav--bottom">
+                <ul class="main-nav__list main-nav__list--bottom site-list">
+                    <li class="site-list__item site-list__item--bottom">
+                        <a href="#">Новые поступления</a>
+                    </li>
+                    <li class="site-list__item site-list__item--bottom">
+                        <a href="#">Распродажа</a>
+                    </li>
+                </ul>
+            </nav>
+            <p class="page-header__text--small">Бесплатная доставка по России</p>
+        </div>
+
     </header>
     <main class="page-main">
-        <section class="services">
-            <h1 class="services__title">Милые штуки ручной работы для дома</h1>
-            <div class="services__main-image">
-                <img src="#" alt="">
-            </div>
-            <div class="services__item services__item--interior">
-                Предметы интерьера
-            </div>
-            <div class="services__item services__item--toys">
-                Мягкие игрушки
+
+        <section class="service">
+            <h1 class="service__title">Милые штуки ручной работы для дома</h1>
+            <div class="service__wrap">
+                <div class="service__item service__item--interior">
+                    <p class="service__text">
+                        Предметы интерьера
+                    </p>
+                </div>
+                <div class="service__item service__item--toys">
+                    <p class="service__text">
+                        Мягкие игрушки
+                    </p>
+                </div>
             </div>
         </section>
-
-
-        <section class="product-week">
-            <div class="product-week__text">Товар недели</div>
-            <div class="product-week__wrap">
-                <div class="product-week__item">
-                    <h2 class="product-week__title"> Вязаные корзинки</h2>
-                    <p>Экологически чистая пряжа,<br>ручная работа. Доступны в шести<br>расцветках и трех размерах</p>
-                    <table>
-                        <tr>
-                            <td>Цвет</td>
-                            <td>"Тифани"/серый</td>
+        <section class="sentence">
+            <div class="sentence__product-week">Товар недели</div>
+            <div class="sentence__item">
+                <h2 class="sentence__title"> Вязаные корзинки</h2>
+                <div>
+                    <p class="sentence__text">Экологически чистая пряжа,<br>ручная работа. Доступны в
+                        шести<br>расцветках и трех размерах</p>
+                    <table class="table-parameters">
+                        <tr class="table-parameters__line">
+                            <td class="table-parameters__cell">Цвет</td>
+                            <td class="table-parameters__cell table-parameters__cell--width">"Тифани"/серый</td>
                         </tr>
-                        <tr>
-                            <td>Диаметры</td>
-                            <td>25 см</td>
+                        <tr class="table-parameters__line">
+                            <td class="table-parameters__cell">Диаметры</td>
+                            <td class="table-parameters__cell table-parameters__cell--width">25 см</td>
                         </tr>
-                        <tr>
-                            <td>Высота</td>
-                            <td>15 см</td>
+                        <tr class="table-parameters__line">
+                            <td class="table-parameters__cell">Высота</td>
+                            <td class="table-parameters__cell table-parameters__cell--width">15 см</td>
                         </tr>
                     </table>
-                    <div class="services__price">
-                        Цена: 990 руб.
-                        <div class="services__order-week-item">
-                            <button type="button">ЗАКАЗАТЬ</button>
-                        </div>
-                    </div>
                 </div>
-                <div class="product-week__img">
-                    <img src="#" alt="">
+                <div class="sentence__price">
+                    Цена: 990 руб.
                 </div>
+                <button class="sentence__order-week-btn button" type="button">ЗАКАЗАТЬ</button>
+            </div>
+            </div>
+            <div class="sentence__img-box">
+                <img class="sentence__img" src="img/triple-set-desktop.jpg" alt="Товар недели">
             </div>
         </section>
         <section class="about-us">
