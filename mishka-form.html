@@ -8,45 +8,47 @@
 
 <body>
     <header class="page-header">
-        <a class="page-header__logo" href="#">
-            <img class="page-header__logo-img" src="#" alt="Логотип">
-        </a>
-        <nav class="main-nav">
-            <button class="main-nav__toggle hidden" type="button">открыть меню</button>
-            <div class="main-nav__wrap1">
-                <ul class="main-nav__top-list site-list">
-                    <li class="site-list__item">
-                        <a href="#">Каталог товаров</a>
-                    </li>
-                    <li class="site-list__item">
-                        <a href="#">Вязание на заказ</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="main-nav__wrap2">
-                <ul class="main-nav__bottom-list site-list">
-                    <li class="site-list__item">
-                        <a href="#">Новые поступления</a>
-                    </li>
-                    <li class="site-list__item">
-                        <a href="#">Распродажа</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <div class="page-header__search">
-            <a href="#">
-                <img src="#" alt="">
+        <div class="page-header__wrap">
+            <a class="page-header__logo" href="#">
+                <img class="page-header__logo-img" src="#" alt="Логотип">
             </a>
-        </div>
-        <div class="page-header__basket">
-            <a href="#">
-                <img src="#" alt="">
-                <div class="page-header__basket-text">
-                    Корзина: пока пуста
+            <nav class="main-nav">
+                <button class="main-nav__toggle hidden" type="button">открыть меню</button>
+                <div class="main-nav__wrap main-nav__wrap--top">
+                    <ul class="main-nav__top-list site-list">
+                        <li class="site-list__item">
+                            <a href="#">Каталог товаров</a>
+                        </li>
+                        <li class="site-list__item">
+                            <a href="#">Вязание на заказ</a>
+                        </li>
+                    </ul>
                 </div>
-            </a>
-            <p class="page-header__text--small">Бесплатная доставка по России</p>
+                <div class="main-nav__wrap main-nav__wrap--bottom">
+                    <ul class="main-nav__bottom-list site-list">
+                        <li class="site-list__item">
+                            <a href="#">Новые поступления</a>
+                        </li>
+                        <li class="site-list__item">
+                            <a href="#">Распродажа</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="page-header__search">
+                <a href="#">
+                    <img src="#" alt="">
+                </a>
+            </div>
+            <div class="basket">
+                <a href="#">
+                    <img src="#" alt="">
+                    <div class="basket__text">
+                        Корзина: пока пуста
+                    </div>
+                </a>
+                <p class="basket__text--small">Бесплатная доставка по России</p>
+            </div>
         </div>
     </header>
     <main class="main-form">
@@ -105,8 +107,8 @@
                 <label class="form__textarea" id="add-info">
                     <div>Доп</div>
                 </label>
-                    <textarea class="form__add-info" name="add-info" cols="30" rows="10"
-                        placeholder="Опишите все ваши пожелания к заказу">
+                <textarea class="form__add-info" name="add-info" cols="30" rows="10"
+                    placeholder="Опишите все ваши пожелания к заказу">
                 </textarea>
             </fieldset>
             <button class="form__btn button">Отправить заказ</button>
