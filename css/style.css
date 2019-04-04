@@ -1,3 +1,11 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  color: black;
+  font-weight: normal;
+  text-align: left;
+}
 ul,
 li {
   list-style: none;
@@ -11,13 +19,6 @@ img {
 a {
   text-decoration: none;
   color: black;
-}
-body {
-  font-size: 17px;
-  line-height: 24px;
-  color: black;
-  font-weight: normal;
-  text-align: left;
 }
 .button {
   display: inline-block;
@@ -278,7 +279,7 @@ body {
 .reviews__text {
   font-size: 17px;
   color: #444444;
-  max-width: 770;
+  max-width: 770px;
   margin-left: 175px;
   margin-bottom: 110px;
 }
@@ -293,7 +294,7 @@ body {
 .reviews__btn {
   position: absolute;
   top: -90px;
-  right: 0;
+  right: -105px;
   width: 175px;
 }
 .reviews__toggle {
@@ -303,7 +304,7 @@ body {
   display: flex;
   width: 175px;
   bottom: 0;
-  right: 0;
+  right: 195px;
 }
 .contacts {
   display: -webkit-box;
@@ -334,9 +335,27 @@ body {
   left: 0;
 }
 .page-footer {
+  width: 100%;
+  max-width: 1250px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
   margin-top: 70px;
+  background-color: #f1f1f1;
+}
+.page-footer__column {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.page-footer__column--left {
+  margin-left: 175px;
+  margin-right: auto;
+}
+.page-footer__column--middle {
+  margin: auto;
+}
+.page-footer__column--right {
+  margin-right: 175px;
+  margin-left: auto;
 }

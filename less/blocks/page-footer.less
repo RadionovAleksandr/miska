@@ -1,5 +1,27 @@
 .page-footer {
-    display: flex;
-    margin    : 0 auto;
-    margin-top: 70px;
+    width           : 100%;
+    max-width       : 1250px;
+    display         : flex;
+    margin          : 0 auto;
+    margin-top      : 70px;
+    background-color: #f1f1f1;
+
+    &__column {
+        margin-top   : 50px;
+        margin-bottom: 50px;
+    }
+
+    &__column--left {
+        margin-left : 175px;
+        margin-right: auto;
+    }
+
+    &__column--middle {
+        margin: auto;
+    }
+
+    &__column--right {
+        margin-right: 175px;
+        margin-left: auto;
+    }
 }
