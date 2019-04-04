@@ -50,22 +50,36 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+.page-header__wrap--top {
+  border-bottom: 2px solid #ececec;
 }
 .page-header__wrap--bottom {
   background-color: #f9f9f9;
 }
 .page-header__logo {
-  margin: 0 auto;
-  padding: 10px;
+  margin: auto;
   width: 100px;
 }
 .page-header__search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.page-header__search-box {
   width: 85px;
-  line-height: 90px;
-  max-height: 90px;
-  margin-left: auto;
-  text-align: center;
-  vertical-align: middle;
+  border-right: 2px solid #ececec;
+  border-left: 2px solid #ececec;
+}
+.page-header__search-img {
+  width: 18px;
+  height: 19px;
+  margin: auto 32px;
 }
 .page-header__text--small {
   margin: 0;
@@ -76,10 +90,10 @@ a {
   font-size: 15px;
   color: #444444;
 }
-.main-nav--top {
-  -webkit-box-ordinal-group: 0;
-      -ms-flex-order: -1;
-          order: -1;
+@media (max-width: 1200px) {
+  .page-header__logo {
+    margin-left: 50px;
+  }
 }
 .main-nav {
   width: 380px;
@@ -104,26 +118,44 @@ a {
   text-align: center;
   font-weight: bold;
   width: 185px;
-  padding: 37px 0;
+  padding: 25px 0;
 }
 .site-list__item--bottom {
   padding: 25px 0;
 }
+@media (max-width: 1200px) {
+  .main-nav--bottom {
+    display: none;
+  }
+  .main-nav--top {
+    position: absolute;
+    top: 90px;
+    margin-left: 50px;
+  }
+}
 .basket {
+  width: 265px;
   font-weight: bold;
   text-align: right;
   margin-right: 80px;
-  padding: 37px 0;
 }
-.basket__text {
+.basket__field {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+}
+.basket__img {
+  width: 21px;
+  height: 18px;
+  padding: 0 31px;
+  margin: auto 0;
+}
+.basket__text {
+  margin: 25px 0;
 }
 .page-main {
   background-image: url("../img/hero-desktop.jpg");
+  background-position-x: center;
   background-repeat: no-repeat;
   background-color: white;
   width: 100%;
@@ -164,6 +196,11 @@ a {
   line-height: 30px;
   font-weight: bold;
   color: white;
+}
+@media (max-width: 1200px) {
+  .service__wrap {
+    margin: 0 50px;
+  }
 }
 .sentence {
   position: relative;

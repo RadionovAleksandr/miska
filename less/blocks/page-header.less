@@ -7,7 +7,13 @@
     background-color: white;
 
     &__wrap {
-        display: flex;
+        display      : flex;
+        align-content: stretch;
+        align-items  : stretch;
+    }
+
+    &__wrap--top {
+        border-bottom: 2px solid #ececec;
     }
 
     &__wrap--bottom {
@@ -15,18 +21,24 @@
     }
 
     &__logo {
-        margin : 0 auto;
-        padding: 10px;
-        width  : 100px;
+        margin: auto;
+        width : 100px;
     }
 
     &__search {
+        display: flex;
+    }
+
+    &__search-box {  
         width         : 85px;
-        line-height   : 90px; //временно
-        max-height    : 90px; //временно
-        margin-left   : auto;
-        text-align    : center;
-        vertical-align: middle;
+        border-right  : 2px solid #ececec;
+        border-left   : 2px solid #ececec;
+    }
+
+    &__search-img {
+        width  : 18px;
+        height : 19px;
+        margin: auto 32px;  
     }
 
     &__text--small {
@@ -37,5 +49,11 @@
         font-weight : normal;
         font-size   : 15px;
         color       : #444444;
+    }
+}
+
+@media (max-width: @desktop-width) {
+    .page-header__logo {
+        margin-left: 50px;
     }
 }

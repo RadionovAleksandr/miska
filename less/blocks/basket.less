@@ -1,11 +1,22 @@
 .basket {
-    font-weight: bold;
-    text-align: right;
+    width       : 265px;
+    font-weight : bold;
+    text-align  : right;
     margin-right: 80px;
-    padding    : 37px 0;
+
+    &__field {
+        display: flex;
+    }
+
+    &__img {
+        width  : 21px;
+        height : 18px;
+        padding: 0 31px;
+        margin: auto 0;
+
+    }
 
     &__text {
-        display: flex;
-        flex-wrap: nowrap;
+        margin   : 25px 0;
     }
 }
