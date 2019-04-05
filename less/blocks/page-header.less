@@ -25,20 +25,18 @@
         width : 100px;
     }
 
-    &__search {
-        display: flex;
-    }
-
-    &__search-box {  
-        width         : 85px;
-        border-right  : 2px solid #ececec;
-        border-left   : 2px solid #ececec;
+    &__search-box {
+        display     : flex;
+        align-items : center;
+        width       : 85px;
+        border-right: 2px solid #ececec;
+        border-left : 2px solid #ececec;
     }
 
     &__search-img {
-        width  : 18px;
-        height : 19px;
-        margin: auto 32px;  
+        width : 18px;
+        height: 19px;
+        margin: auto 32px;
     }
 
     &__text--small {
@@ -55,5 +53,9 @@
 @media (max-width: @desktop-width) {
     .page-header__logo {
         margin-left: 50px;
+    }
+
+    .page-header {
+        max-width: 768px;
     }
 }

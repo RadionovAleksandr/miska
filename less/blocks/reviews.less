@@ -7,7 +7,7 @@
 }
 
 .reviews {
-    margin           : 0 auto;
+    margin           : 0 100px;
     margin-top       : 92px;
     background-repeat: no-repeat;
     margin-bottom    : 70px;
@@ -25,15 +25,17 @@
 
     &__text {
         font-size    : 17px;
+        line-height  : 30px;
         color        : #444444;
         max-width    : 770px;
-        margin-left  : 175px;
         margin-bottom: 110px;
+        margin-left  : 175px;
     }
 
     &__data-autor {
-        margin-top: 52px;
-        color     : #444444;
+        margin-left: 175px;
+        margin-top : 52px;
+        color      : #444444;
     }
 
     &__data-autor--bold {
@@ -53,6 +55,40 @@
         display : flex;
         width   : 175px;
         bottom  : 0;
-        right   : 195px;
+        right   : 0;
     }
+
+    &__togl-item {
+        padding         : 0 20px;
+        outline         : none;
+        border          : none;
+        background-color: transparent;
+
+    }
+}
+
+@media (max-width: @desktop-width) {
+    .reviews {
+        margin: 0;
+    }
+
+    .reviews__title,
+    .reviews__text {
+        margin-left: 50px;
+    }
+
+    .reviews__text {
+        margin-right: 50px;
+        
+    }
+
+    .reviews__data-autor {
+        margin-left: 0;
+    }
+
+    .reviews__btn {
+        right: -50px;
+
+    }
+
 }

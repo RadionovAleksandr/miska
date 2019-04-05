@@ -1,8 +1,20 @@
 .sentence {
-    position   : relative;
-    margin     : 0 auto;
-    padding-top: 130px;
-    display    : flex;
+    display        : flex;
+    flex-direction : column;
+    justify-content: flex-start; //тут неразобрался почему флекс элемент не поджимается под контент
+    align-content  : flex-start; //тут неразобрался почему флекс элемент не поджимается под контент
+    align-items    : flex-start; //тут неразобрался почему флекс элемент не поджимается под контент
+    position       : relative;
+    margin         : 0 auto;
+    padding-top    : 130px;
+
+    &__title-wrap {
+        display   : flex;
+        position  : relative;
+        left      : 100px;
+        z-index   : 10;
+        margin-top: 27px;
+    }
 
     &__product-week {
         width         : 70px;
@@ -14,47 +26,95 @@
         color         : #63d1bb;
     }
 
-    &__item {
-        width  : 350px;
-        z-index: 10;
-    }
-
     &__title {
-        position     : absolute;
-        left         : 172px;
+        font-weight  : bold;
         font-size    : 53px;
         margin-top   : 0;
-        margin-bottom: 53px;
+        margin-bottom: 60px;
+    }
+
+    &__wrap {
+        display    : flex;
+        align-items: flex-start;
+
+    }
+
+    &__item {
+        width      : 350px;
+        margin-left: 275px;
     }
 
     &__text {
         color        : #444444;
         line-height  : 30px;
         margin       : 0;
-        margin-bottom: 56px;
-        margin-top   : 100px;
+        margin-bottom: 47px;
     }
 
     &__price {
-        margin-top : 110px;
-        margin-left: 75px; //половина расстояния таблицы
+        max-width : 290px;
+        text-align: center;
+
+        margin-top : 100px;
         font-size  : 20px;
         font-weight: bold;
     }
 
     &__order-week-btn {
-        margin-top: 35px;
+        margin-top: 30px;
         padding   : 16px 103px;
     }
 
-    &__img-box {
-        max-width: 525px; //50%
-    }
+    // &__img-box {
+    //     max-width: 525px; //50%
+    // }
 
     &__img {
         position: relative;
-        top     : -70px;
+        top     : -158px;
         left    : 0;
+        width   : 525px;
     }
+
+}
+
+@media (max-width: @desktop-width) {
+    .sentence {
+        padding-top: 60px;
+    }
+
+    .sentence__item {
+        width: 334px;
+        order: 0;
+    }
+
+    .sentence__title-wrap {
+        position   : static;
+        margin-left: 50px;
+    }
+
+    .sentence__title {
+        font-size: 43px
+    }
+
+    .sentence__product-week {
+        order       : 1;
+        margin-right: 25px;
+        margin-left : 150px;
+    }
+
+    .sentence__item {
+        margin-left: 50px;
+    }
+
+    .sentence__img-box {
+        order: 1;
+    }
+
+    .sentence__img {
+        position: static;
+        width   : 400px;
+    }
+
 
 }
