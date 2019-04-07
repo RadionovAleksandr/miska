@@ -47,8 +47,28 @@
     }
 
     .service__title {
-        font-size  : 43px;
-        line-height: 51.23px;
+        font-size     : 43px;
+        line-height   : 51.23px;
         padding-bottom: 370px;
+    }
+}
+
+@media (max-width: @tablet-width) {
+    .service__wrap {
+        margin: 0;
+    }
+
+    .service__title {
+        font-size     : 27px;
+        line-height   : 30.74px;
+        padding-bottom: 390px;
+    }
+
+    .service__wrap {
+        flex-direction: column;
+    }
+
+    .service__item {
+        width: 100%;
     }
 }

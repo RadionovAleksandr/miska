@@ -38,7 +38,7 @@
         color      : #444444;
     }
 
-    &__data-autor--bold {
+    &__autor-name {
         color      : black;
         font-weight: bold;
     }
@@ -63,7 +63,6 @@
         outline         : none;
         border          : none;
         background-color: transparent;
-
     }
 }
 
@@ -79,7 +78,6 @@
 
     .reviews__text {
         margin-right: 50px;
-        
     }
 
     .reviews__data-autor {
@@ -88,7 +86,52 @@
 
     .reviews__btn {
         right: -50px;
+    }
+}
+
+@media (max-width: @tablet-width) {
+    .reviews {
+        margin: 0;
+    }
+
+    .reviews__img {
+        display: none;
+    }
+
+    .reviews__title {
+        font-size: 25px;
+    }
+
+    .reviews__title,
+    .reviews__text {
+        margin-left: 35px;
+    }
+
+    .reviews__text {
+        display       : flex;
+        flex-direction: column;
+        margin-right  : 35px;
 
     }
 
+    .reviews__data-autor {
+        margin-left: 0;
+    }
+
+    .reviews__btn {
+        position   : static;
+        margin-top : 125px;
+        width      : 260px;
+    }
+
+    .reviews__toggle {
+        bottom: 80px;
+        left  : 35px;
+        width : 260px;
+
+    }
+
+    .reviews__togl-item {
+        padding: 40px;
+    }
 }

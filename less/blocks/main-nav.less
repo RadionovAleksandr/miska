@@ -16,6 +16,7 @@
     font-weight: bold;
     width      : 185px;
     padding    : 25px 0;
+    list-style    : none;
 
     &--bottom {
         padding: 25px 0;
@@ -28,9 +29,14 @@
     }
 
     .main-nav--top {
-        position: absolute;
-        top     : 90px;
+        position   : absolute;
+        top        : 90px;
         margin-left: 50px;
     }
+}
 
+@media (max-width: @tablet-width) {
+    .main-nav--top {
+        display: none;
+    }
 }

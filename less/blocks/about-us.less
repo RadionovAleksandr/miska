@@ -8,8 +8,8 @@
     }
 
     &__wrap {
-        display    : flex;
-        margin: 0 auto;
+        display: flex;
+        margin : 0 auto;
     }
 
     &__list-item {
@@ -31,5 +31,24 @@
 @media (max-width: @desktop-width) {
     .about-us {
         margin: 0 50px;
+    }
+}
+
+@media (max-width: @tablet-width) {
+    .about-us {
+        margin: 0 35px;
+    }
+
+    .about-us__title {
+        font-size: 25px;
+    }
+
+    .about-us__wrap {
+        flex-direction: column;
+    }
+
+    &__list-item {
+        font-size  : 17px;
+        margin-top : 35px;
     }
 }
