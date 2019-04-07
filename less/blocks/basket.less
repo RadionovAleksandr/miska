@@ -4,6 +4,10 @@
     text-align  : right;
     margin-right: 80px;
 
+    @media (max-width: @tablet-width) {
+        display: none;
+    }
+
     &__field {
         display: flex;
     }
@@ -18,12 +22,5 @@
 
     &__text {
         margin: 25px 0;
-    }
-}
-
-
-@media (max-width: @tablet-width) {
-    .basket {
-        display:  none;
     }
 }

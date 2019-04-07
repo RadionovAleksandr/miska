@@ -12,15 +12,33 @@
     background-repeat: no-repeat;
     margin-bottom    : 70px;
 
+    @media (max-width: @desktop-width) {
+        margin: 0;
+    }
+
     &__img {
         position : absolute;
         top      : -80px;
         max-width: 350px;
+
+        @media (max-width: @tablet-width) {
+            display: none;
+        }
     }
 
     &__title {
         font-size  : 53px;
         margin-left: 175px;
+
+        @media (max-width: @desktop-width) {
+            margin-left: 50px;
+
+        }
+
+        @media (max-width: @tablet-width) {
+            font-size  : 25px;
+            margin-left: 35px;
+        }
     }
 
     &__text {
@@ -30,12 +48,28 @@
         max-width    : 770px;
         margin-bottom: 110px;
         margin-left  : 175px;
+
+        @media (max-width: @desktop-width) {
+            margin-left : 50px;
+            margin-right: 50px;
+        }
+
+        @media (max-width: @tablet-width) {
+            margin-right  : 35px;
+            margin-left   : 35px;
+            display       : flex;
+            flex-direction: column;
+        }
     }
 
     &__data-autor {
-        margin-left: 175px;
+        margin-left: 0;
         margin-top : 52px;
         color      : #444444;
+
+        @media (max-width: @desktop-width) {
+            margin-left: 0;
+        }
     }
 
     &__autor-name {
@@ -48,6 +82,16 @@
         top     : -90px;
         right   : -105px;
         width   : 175px;
+
+        @media (max-width: @desktop-width) {
+            right: -50px;
+        }
+
+        @media (max-width: @tablet-width) {
+            position  : static;
+            margin-top: 125px;
+            width     : 260px;
+        }
     }
 
     &__toggle {
@@ -56,6 +100,13 @@
         width   : 175px;
         bottom  : 0;
         right   : 0;
+
+        @media (max-width: @tablet-width) {
+            bottom: 80px;
+            left  : 35px;
+            width : 260px;
+
+        }
     }
 
     &__togl-item {
@@ -63,75 +114,9 @@
         outline         : none;
         border          : none;
         background-color: transparent;
-    }
-}
 
-@media (max-width: @desktop-width) {
-    .reviews {
-        margin: 0;
-    }
-
-    .reviews__title,
-    .reviews__text {
-        margin-left: 50px;
-    }
-
-    .reviews__text {
-        margin-right: 50px;
-    }
-
-    .reviews__data-autor {
-        margin-left: 0;
-    }
-
-    .reviews__btn {
-        right: -50px;
-    }
-}
-
-@media (max-width: @tablet-width) {
-    .reviews {
-        margin: 0;
-    }
-
-    .reviews__img {
-        display: none;
-    }
-
-    .reviews__title {
-        font-size: 25px;
-    }
-
-    .reviews__title,
-    .reviews__text {
-        margin-left: 35px;
-    }
-
-    .reviews__text {
-        display       : flex;
-        flex-direction: column;
-        margin-right  : 35px;
-
-    }
-
-    .reviews__data-autor {
-        margin-left: 0;
-    }
-
-    .reviews__btn {
-        position   : static;
-        margin-top : 125px;
-        width      : 260px;
-    }
-
-    .reviews__toggle {
-        bottom: 80px;
-        left  : 35px;
-        width : 260px;
-
-    }
-
-    .reviews__togl-item {
-        padding: 40px;
+        @media (max-width: @tablet-width) {
+            padding: 40px;
+        }
     }
 }
