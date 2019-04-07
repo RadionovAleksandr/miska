@@ -56,6 +56,9 @@ a {
     max-width: 320px;
   }
 }
+.page-header--inernal {
+  max-width: 1150px;
+}
 .page-header__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -71,6 +74,9 @@ a {
 }
 .page-header__wrap--bottom {
   background-color: #f9f9f9;
+}
+.page-header__wrap--internal {
+  background-color: #f1f1f1;
 }
 .page-header__logo {
   margin: auto;
@@ -210,6 +216,10 @@ a {
   .page-main {
     max-width: 320px;
   }
+}
+.page-main--inernal {
+  background-image: none;
+  max-width: 1150px;
 }
 .service__title {
   max-width: 620px;
@@ -826,6 +836,9 @@ a {
   margin-top: 70px;
   background-color: #f1f1f1;
 }
+.page-footer--internal {
+  max-width: 1150px;
+}
 @media (max-width: 768px) {
   .page-footer {
     width: 100%;
@@ -897,4 +910,81 @@ a {
 .page-footer__img-dev {
   margin-left: 30px;
   width: 27px;
+}
+.catalog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.catalog__title {
+  font-size: 53px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #f1f1f1;
+  width: 100%;
+  margin: 0;
+  padding-top: 50px;
+  padding-bottom: 115px;
+}
+.catalog-card {
+  margin-top: 130px;
+  width: 315px;
+  margin-left: 50px;
+}
+@media (max-width: 1150px) {
+  .catalog-card {
+    width: 668px;
+  }
+}
+@media (max-width: 768px) {
+  .catalog-card {
+    width: 260px;
+  }
+}
+.production {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 110px;
+}
+@media (max-width: 1150px) {
+  .production {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.production__img-video {
+  width: 680px;
+}
+@media (max-width: 1150px) {
+  .production__img-video {
+    width: 668px;
+  }
+}
+@media (max-width: 768px) {
+  .production__img-video {
+    width: 260px;
+  }
+}
+.production__wrap {
+  width: 370px;
+}
+.production__img,
+.production__title,
+.production__text,
+.production__btn {
+  margin: 20px 80px;
+}
+.production__img {
+  margin-top: 45px;
+  margin-bottom: 10px;
+  width: 32px;
+}
+.production__btn {
+  margin-top: 30px;
+  width: 230px;
 }

@@ -4,14 +4,18 @@
 <head>
     <meta charset="utf-8">
     <title>mishka</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic,cyrillic-ext,latin-ext"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <header class="page-header">
+    <header class="page-header page-header--inernal">
         <div class="page-header__wrap page-header__wrap--top">
             <a class="page-header__logo" href="#">
-                <img class="page-header__logo-img" src="#" alt="Логотип">
+                <img class="page-header__logo-img" src="img/mishka-logo-desktop.svg" alt="Логотип">
             </a>
             <nav class="main-nav main-nav--top">
                 <button class="main-nav__toggle hidden" type="button">открыть меню</button>
@@ -24,22 +28,23 @@
                     </li>
                 </ul>
             </nav>
-            <div class="page-header__search">
-                <a href="#">
-                    <img src="#" alt="Поиск">
+            <div class="page-header__search-box">
+                <a class="page-header__search" href="#">
+                    <img class="page-header__search-img" src="img/search.svg" alt="Поиск">
                 </a>
             </div>
             <div class="basket">
-                <a class="basket__text">
-                    <div>
+                <a class="basket__field">
+                    <img class="basket__img" src="img/cart.svg" alt="корзина">
+                    <div class="basket__text">
                         Корзина: пока пуста
                     </div>
                 </a>
             </div>
         </div>
-        <div class="page-header__wrap page-header__wrap--bottom">
+        <div class="page-header__wrap page-header__wrap--bottom  page-header__wrap--internal">
 
-            <nav class="main-nav main-nav--bottom">
+            <nav class="main-nav main-nav--bottom main-nav">
                 <ul class="main-nav__list main-nav__list--bottom site-list">
                     <li class="site-list__item site-list__item--bottom">
                         <a href="#">Новые поступления</a>
@@ -51,13 +56,15 @@
             </nav>
             <p class="page-header__text--small">Бесплатная доставка по России</p>
         </div>
+
     </header>
 
-    <main class="page-main">
+    <main class="page-main page-main--inernal">
         <section class="catalog">
-            <h1 class="catalogn__title">Каталог товаров</h1>
-            <div class="catalog__card-wrap">
-                <a class="catalog-card" href=""><img class="catalog-card__img" src="#" alt="">
+            <h1 class="catalog__title">Каталог товаров</h1>
+            <div class="catalog-card">
+                <a class="catalog-card__field" href=""><img class="catalog-card__img" src="img/photo-1-desktop.jpg"
+                        alt="">
                     <p class="catalog-card__title">
                         Зайчик-попрыгайчик<br><span class="catalog-card-__text">Рост 30см, вес 200г</span>
                     </p>
@@ -65,8 +72,9 @@
                     <p class="catalog-card__price">1200 руб.</p>
                 </a>
             </div>
-            <div class="catalog__card-wrap">
-                <a class="catalog-card" href=""><img class="catalog-card__img" src="#" alt="">
+            <div class="catalog-card">
+                <a class="catalog-card__field" href=""><img class="catalog-card__img" src="img/photo-2-desktop.jpg"
+                        alt="">
                     <p class="catalog-card__title">
                         Корзинка для белья<br><span class="catalog-card-__text">Диаметр 15см, высота 10см</span>
                     </p>
@@ -74,8 +82,9 @@
                     <p class="catalog-card__price">690 руб.</p>
                 </a>
             </div>
-            <div class="catalog__card-wrap">
-                <a class="catalog-card" href=""><img class="catalog-card__img" src="#" alt="">
+            <div class="catalog-card">
+                <a class="catalog-card__field" href=""><img class="catalog-card__img" src="img/photo-3-desktop.jpg"
+                        alt="">
                     <p class="catalog-card__title">
                         Большая корзинка для игрушек<br><span class="catalog-card-__text">Диаметр 30см, высота
                             30см</span>
@@ -87,32 +96,39 @@
         </section>
         <div class="production">
             <h1 class="hidden">Прозиводство товара</h1>
-            <img src="#" alt="">
-            <div>
-                <img src="#" alt="фоновая иконка">
+            <img class="production__img-video" src="img/play.jpg" alt="">
+            <div class="production__wrap">
+                <img class="production__img" src="img/video.svg" alt="фоновая иконка">
                 <p class="production__title">Процесс производства</p>
-                <p class="production__text"></p>
+                <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подбробное видео о
+                    том, как появляются наши товары</p>
                 <button class="production__btn button">Сделать заказ</button>
             </div>
         </div>
     </main>
 
-    <footer class="page-footer">
-        <div class="footer__column footer__column--left">
-            <a class="footer__logo">
-                <img class="footer__logo-img" src="#" alt="">
+    <footer class="page-footer page-footer--internal">
+        <div class="page-footer__column page-footer__column--left">
+            <a class="page-footer__logo">
+                <img class="footer__logo-img" src="img/logo-footer.svg" alt="">
             </a>
         </div>
-        <div class="footer__column footer__column--middle">
-            <a class="footer__social-web-item" href="#"><img class="footer__social-img footer__social-img--inst" src="#"
-                    alt="инстаграмм"></a>
-            <a class="footer__social-web-item" href="#"><img class="footer__social-img footer__social-img--fb" src="#"
-                    alt="фейсбук"></a>
-            <a class="footer__social-web-item" href="#"><img class="footer__social-img footer__social-img--tw" src="#"
-                    alt="твиттер"></a>
+        <div class="page-footer__column page-footer__column--middle">
+            <a class="page-footer__social-web-item" href="#">
+                <img class="page-footer__social-img page-footer__social-img--inst" src="img/insta.svg" alt="инстаграмм">
+            </a>
+            <a class="page-footer__social-web-item" href="#">
+                <img class="page-footer__social-img page-footer__social-img--fb" src="img/fb.svg" alt="фейсбук">
+            </a>
+            <a class="page-footer__social-web-item" href="#">
+                <img class="page-footer__social-img page-footer__social-img--tw" src="img/twitter.svg" alt="твиттер">
+            </a>
         </div>
-        <div class="footer__column footer__column--right">
-            <div class="footer__text">Разработано<a><img src="#" alt=""></a></div>
+        <div class="page-footer__column page-footer__column--right">
+            <a class="page-footer__developer">
+                <div class="page-footer__text">Разработано</div>
+                <img class="page-footer__img-dev" src="img/htmlacademy.svg" alt="">
+            </a>
         </div>
     </footer>
 
