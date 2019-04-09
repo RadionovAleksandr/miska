@@ -1,0 +1,68 @@
+.service {
+
+    &__title {
+        max-width     : 620px;
+        min-width     : 260px;
+        margin        : 0 auto;
+        padding-top   : 155px;
+        padding-bottom: 355px;
+        font-size     : 53px;
+        line-height   : 58.5px;
+        text-align    : center;
+        font-weight   : bold;
+
+        @media (max-width: @desktop-width) {
+            font-size     : 43px;
+            line-height   : 51.23px;
+            padding-bottom: 370px;
+        }
+
+        @media (max-width: @tablet-width) {
+
+            font-size     : 27px;
+            line-height   : 30.74px;
+            padding-bottom: 390px;
+        }
+    }
+
+    &__wrap {
+        display  : flex;
+        margin   : 0 auto;
+        max-width: 1050px;
+
+        @media (max-width: @desktop-width) {
+            margin: 0 50px;
+        }
+
+        @media (max-width: @tablet-width) {
+            margin        : 0;
+            flex-direction: column;
+        }
+    }
+
+    &__item {
+        width: 50%;
+
+        @media (max-width: @tablet-width) {
+            width: 100%;
+        }
+    }
+
+    &__item--interior {
+        background-color: #63d1bb;
+    }
+
+    &__item--toys {
+        background-color: #56c3b2;
+    }
+
+    &__text {
+        width      : 125px;
+        margin     : 30px 0;
+        margin-left: 36px;
+        font-size  : 20px;
+        line-height: 30px;
+        font-weight: bold;
+        color      : white;
+    }
+}

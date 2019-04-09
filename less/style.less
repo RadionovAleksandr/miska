@@ -1,29 +1,21 @@
-@red: #ff4136;
-@base-size: 220px;
+//общий стили
+@import "common.less";
 
-.transform(increase; @size) {
-    width: @base-size + @size;
-    height: @base-size + @size;
-}
-
-.transform(decrease; @size) {
-    width: @base-size - @size;
-    height: @base-size - @size;
-}
-
-.monster {
-    width: @base-size;
-    height: @base-size;
-}
-
-.monster-happy {
-    .transform(increase, 50px);
-}
-
-.monster-foolish {
-    .transform(decrease, 50px);
-}
-
-.transform(@_, @size) {
-    background-color: @red;
-}
+//Блоки 
+@import "blocks/page-header.less";
+@import "blocks/main-nav.less";
+@import "blocks/basket.less";
+@import "blocks/page-main.less";
+@import "blocks/service.less";
+@import "blocks/sentence.less";
+@import "blocks/table-parameters.less";
+@import "blocks/about-us.less";
+@import "blocks/reviews.less";
+@import "blocks/contacts.less";
+@import "blocks/page-footer.less";
+@import "mixins.less";
+@import "blocks/catalog.less";
+@import "blocks/catalog-card.less";
+@import "blocks/production.less";
+@import "blocks/page-main-form.less";
+@import "blocks/knitting-order.less";

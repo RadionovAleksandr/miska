@@ -1,0 +1,17 @@
+.page-main {
+    background-image     : url("../img/hero-desktop.jpg");
+    background-position-x: center;
+    background-repeat    : no-repeat;
+    background-color     : white;
+    width                : 100%;
+    max-width            : 1250px;
+    margin               : 0 auto;
+
+    @media (max-width: @desktop-width) {
+        max-width: 768px;
+    }
+
+    @media (max-width: @tablet-width) {
+        max-width: 320px;
+    }
+}

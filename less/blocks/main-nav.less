@@ -1,0 +1,42 @@
+.main-nav {
+    width      : 380px;
+    margin-left: 100px;
+    order      : -1;
+
+    &__list {
+        display       : flex;
+        flex-direction: flex-start;
+        flex-wrap     : wrap;
+        width         : 370px;
+    }
+
+    &--bottom {
+        @media (max-width: @desktop-width) {
+            display: none;
+        }
+    }
+
+    &--top {
+        @media (max-width: @desktop-width) {
+            position   : absolute;
+            top        : 90px;
+            margin-left: 50px;
+
+            @media (max-width: @tablet-width) {
+                display: none;
+            }
+        }
+    }
+}
+
+.site-list__item {
+    text-align : center;
+    font-weight: bold;
+    width      : 185px;
+    padding    : 25px 0;
+    list-style : none;
+
+    &--bottom {
+        padding: 25px 0;
+    }
+}

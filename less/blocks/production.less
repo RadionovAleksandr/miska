@@ -1,0 +1,44 @@
+.production {
+    display      : flex;
+    margin-bottom: 110px;
+
+    @media (max-width: @desktop-internal-width) {
+        flex-direction: column;
+    }
+
+    &__img-video {
+        width: 680px;
+
+        @media (max-width: @desktop-internal-width) {
+            width: 668px;
+        }
+
+        @media (max-width: @tablet-width) {
+            width: 260px;
+        }
+    }
+
+    &__wrap {
+        width: 370px;
+
+
+    }
+
+    &__img,
+    &__title,
+    &__text,
+    &__btn {
+        margin: 20px 80px;
+    }
+
+    &__img {
+        margin-top   : 45px;
+        margin-bottom: 10px;
+        width        : 32px;
+    }
+
+    &__btn {
+        margin-top: 30px;
+        width     : 230px
+    }
+}

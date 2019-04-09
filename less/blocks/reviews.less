@@ -1,0 +1,122 @@
+.reviews,
+.reviews__title,
+.reviews__text,
+.reviews__data-autor {
+    position: relative;
+    z-index : 10;
+}
+
+.reviews {
+    margin           : 0 100px;
+    margin-top       : 92px;
+    background-repeat: no-repeat;
+    margin-bottom    : 70px;
+
+    @media (max-width: @desktop-width) {
+        margin: 0;
+    }
+
+    &__img {
+        position : absolute;
+        top      : -80px;
+        max-width: 350px;
+
+        @media (max-width: @tablet-width) {
+            display: none;
+        }
+    }
+
+    &__title {
+        font-size  : 53px;
+        margin-left: 175px;
+
+        @media (max-width: @desktop-width) {
+            margin-left: 50px;
+
+        }
+
+        @media (max-width: @tablet-width) {
+            font-size  : 25px;
+            margin-left: 35px;
+        }
+    }
+
+    &__text {
+        font-size    : 17px;
+        line-height  : 30px;
+        color        : #444444;
+        max-width    : 770px;
+        margin-bottom: 110px;
+        margin-left  : 175px;
+
+        @media (max-width: @desktop-width) {
+            margin-left : 50px;
+            margin-right: 50px;
+        }
+
+        @media (max-width: @tablet-width) {
+            margin-right  : 35px;
+            margin-left   : 35px;
+            display       : flex;
+            flex-direction: column;
+        }
+    }
+
+    &__data-autor {
+        margin-left: 0;
+        margin-top : 52px;
+        color      : #444444;
+
+        @media (max-width: @desktop-width) {
+            margin-left: 0;
+        }
+    }
+
+    &__autor-name {
+        color      : black;
+        font-weight: bold;
+    }
+
+    &__btn {
+        position: absolute;
+        top     : -90px;
+        right   : -105px;
+        width   : 175px;
+
+        @media (max-width: @desktop-width) {
+            right: -50px;
+        }
+
+        @media (max-width: @tablet-width) {
+            position  : static;
+            margin-top: 125px;
+            width     : 260px;
+        }
+    }
+
+    &__toggle {
+        position: absolute;
+        display : flex;
+        width   : 175px;
+        bottom  : 0;
+        right   : 0;
+
+        @media (max-width: @tablet-width) {
+            bottom: 80px;
+            left  : 35px;
+            width : 260px;
+
+        }
+    }
+
+    &__togl-item {
+        padding         : 0 20px;
+        outline         : none;
+        border          : none;
+        background-color: transparent;
+
+        @media (max-width: @tablet-width) {
+            padding: 40px;
+        }
+    }
+}
