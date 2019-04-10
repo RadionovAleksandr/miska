@@ -7,6 +7,7 @@
     position       : relative;
     margin         : 0 auto;
     padding-top    : 130px;
+    width: 100%;
 
     @media (max-width: @desktop-width) {
         padding-top: 60px;
@@ -25,7 +26,9 @@
 
         @media (max-width: @desktop-width) {
             position   : static;
-            margin-left: 50px;
+            margin-left: 8%; //8 процентов
+            margin-right: 8%;
+            width: 84%;
         }
 
         @media (max-width: @tablet-width) {
@@ -45,8 +48,8 @@
 
         @media (max-width: @desktop-width) {
             order       : 1;
-            margin-right: 25px;
-            margin-left : 150px;
+            margin-right: 3.6px;
+            margin-left : auto;
         }
 
         @media (max-width: @tablet-width) {
@@ -84,6 +87,12 @@
         display    : flex;
         align-items: flex-start;
 
+        @media(max-width: @desktop-width) {
+            width: 100%;
+          
+
+        }
+
         @media(max-width: @tablet-width) {
             flex-wrap: wrap;
         }
@@ -94,13 +103,13 @@
         margin-left: 275px;
 
         @media(max-width: @desktop-width) {
-            margin-left: 50px;
-            width: 334px;
+            margin-left: 8%;
+            width: 50%;
             order: 0;
         }
 
         @media(max-width: @tablet-width) {
-            margin-left: 35px;
+            margin: 35px;
             width      : 260px;
             order      : 0;
         }
@@ -128,8 +137,12 @@
     }
 
     &__order-week-btn {
-        margin-top: 30px;
+        margin-top: 40px;
         padding   : 16px 103px;
+
+        @media (max-width: @desktop-width) {
+            margin-top: 35px;  
+        }
 
         @media (max-width: @tablet-width) {
             margin-left: 35px;
@@ -155,7 +168,9 @@
 
         @media(max-width: @desktop-width) {
             position: static;
-            width   : 400px;
+            width   : 52.1%;
+            max-width: 500px;
+
         }
 
         @media(max-width: @tablet-width) {

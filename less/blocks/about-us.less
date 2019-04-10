@@ -2,7 +2,7 @@
     margin: 0 275px;
 
     @media (max-width: @desktop-width) {
-        margin: 0 50px;
+        margin: 0 7.5%;
     }
 
     @media(max-width: @tablet-width) {
@@ -23,10 +23,21 @@
     &__wrap {
         display: flex;
         margin : 0 auto;
+        width: 100%;
 
         @media (max-width: @tablet-width) {
-            flex-direction: column;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: 0;
         }
+    }
+
+    &__list {
+        @media (max-width: @desktop-width) {
+            width: 100%;
+            
+         }
+
     }
 
     &__list-item {
@@ -35,9 +46,11 @@
         max-width  : 350px;
         font-weight: bold;
 
+
         @media (max-width: @tablet-width) {
             font-size : 17px;
             margin-top: 35px;
+            width: 260px;
         }
     }
 

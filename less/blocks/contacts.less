@@ -6,6 +6,7 @@
     @media (max-width: @desktop-width) {
         flex-wrap: wrap;
         position : relative;
+        width: 100%;
     }
 
     &__img-wrap {
@@ -33,6 +34,10 @@
         font-size : 53px;
         margin-top: 155px;
 
+        @media (max-width: @desktop-width) {
+            display: block;
+        }
+
         @media (max-width: @tablet-width) {
             font-size    : 18px;
             margin       : 0 35px;
@@ -46,26 +51,33 @@
 
         @media (max-width: @desktop-width) {
             flex-direction: row;
-            width         : 668px;
+            width         : 100%;
         }
 
-        @media (max-width: @desktop-width) {
-            flex-direction: column;
-            width         : 260px;
+        @media (max-width: @tablet-width) {
+            flex-wrap: wrap;
+            width         : 100%;
             margin        : 0 35px;
             font-size     : 15px;
         }
     }
 
     &__address {
+        
         color    : #444444;
-        max-width: 350px;
+        min-width: 320px;
+        max-width: 767px;
+        width: 100%;
+
+        @media (max-width: @desktop-width) {
+            margin-left: 6.5%;
+            //max-width: 1199px;
+        }
     }
 
     &__address-name,
     &__mail {
         margin-top   : 60px;
-        // color     : #444444;
 
         @media (max-width: @tablet-width) {
             display   : flex;
@@ -88,23 +100,25 @@
         @media (max-width: @desktop-width) {
             position: absolute;
             bottom  : 60px;
-            left    : 270px;
+            left    : 50%;
+            margin-left: -130px;
         }
 
         @media (max-width: @tablet-width) {
             bottom  : 60px;
-            left    : 30px;
+            left    : 50%;
             width   : 260px;
+            margin-left: -130px;
         }
     }
 
     &__map {
-        width     : 525px;
+        width     : 100%;
         margin-top: 70px;
 
         @media (max-width: @desktop-width) {
             margin-bottom: 170px;
-            width        : 768px;
+            width        : 100%;
             height       : 460px;
         }
 
