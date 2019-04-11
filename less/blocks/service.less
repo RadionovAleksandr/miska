@@ -1,4 +1,5 @@
 .service {
+    position: relative;
 
     &__title {
         max-width     : 620px;
@@ -60,9 +61,21 @@
         width      : 125px;
         margin     : 30px 0;
         margin-left: 36px;
+        margin-bottom: 40px;
         font-size  : 20px;
         line-height: 30px;
         font-weight: bold;
         color      : white;
+    }
+
+    &__zigzag-img {
+        width: 100%;
+        min-height: 40px;
+        position: absolute;
+        bottom: -1px;
+        background-image: url("../img/zigzag-fill-desktop.svg");
+    background-repeat: repeat-x;
+    background-position: 0% 100%;
+    background-size: 5%;
     }
 }
