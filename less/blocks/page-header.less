@@ -11,7 +11,7 @@
     }
 
     @media (max-width: @tablet-width) {
-        max-width: 767px;
+        max-width    : 767px;
         border-bottom: 2px solid #ececec;
     }
 
@@ -27,14 +27,22 @@
         display      : flex;
         align-content: stretch;
         align-items  : stretch;
-    }
 
-    &__wrap--bottom {
-        background-color: #f9f9f9;
-    }
+        &--bottom {
+            background-color: #f9f9f9;
+        }
 
-    &__wrap--internal {
-        background-color: #f1f1f1;
+        &--top {
+            border-bottom: 2px solid #e7e7e7;
+            
+            @media (max-width: @tablet-width) {
+                border-bottom: 1px solid #e7e7e7;
+            }
+        }
+
+        &--internal {
+            background-color: #f1f1f1;
+        }
     }
 
     &__logo {

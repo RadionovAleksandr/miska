@@ -78,6 +78,14 @@ a {
 .page-header__wrap--bottom {
   background-color: #f9f9f9;
 }
+.page-header__wrap--top {
+  border-bottom: 2px solid #e7e7e7;
+}
+@media (max-width: 768px) {
+  .page-header__wrap--top {
+    border-bottom: 1px solid #e7e7e7;
+  }
+}
 .page-header__wrap--internal {
   background-color: #f1f1f1;
 }
@@ -237,7 +245,7 @@ a {
 @media (max-width: 1200px) {
   .main-nav--top {
     position: absolute;
-    top: 60px;
+    top: 70px;
     margin-left: 60px;
     width: 100%;
   }
@@ -359,6 +367,11 @@ a {
 }
 .basket__text {
   margin: 25px 0;
+}
+@media (max-width: 1200px) {
+  .basket__text {
+    margin: 21px 0;
+  }
 }
 /*Эксперементы
 
@@ -894,16 +907,6 @@ a {
     margin-bottom: 45px;
   }
 }
-@media (max-width: 1200px) {
-  .reviews__spike {
-    margin-left: 85px;
-  }
-}
-@media (max-width: 768px) {
-  .reviews__spike {
-    margin-left: 0;
-  }
-}
 .reviews__data-autor {
   margin-left: 0;
   margin-top: 52px;
@@ -933,7 +936,7 @@ a {
   .reviews__btn {
     position: static;
     margin: 0 auto;
-    margin-top: 125px;
+    margin-top: 106px;
     width: 260px;
   }
 }
@@ -953,7 +956,10 @@ a {
 }
 @media (max-width: 768px) {
   .reviews__toggle {
-    bottom: 80px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    bottom: 87px;
     left: 50%;
     width: 260px;
     margin-left: -130px;
@@ -968,6 +974,12 @@ a {
 @media (max-width: 768px) {
   .reviews__togl-item {
     padding: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .reviews__togl-item {
+    padding: 10px 40px;
+    border: 1px solid #e7e7e7;
   }
 }
 .contacts {
