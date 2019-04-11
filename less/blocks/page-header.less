@@ -11,6 +11,7 @@
     @media (max-width: @tablet-width) {
         max-width: 767px;
         border-bottom: 2px solid #ececec;
+        min-height: 83px;
     }
     &--inernal {
         max-width: 1150px;
@@ -20,8 +21,7 @@
     }
     &__wrap {
         display: flex;
-        align-content: stretch;
-        align-items: stretch;
+      
         &--bottom {
             background-color: #f9f9f9;
         }
@@ -29,6 +29,8 @@
             border-bottom: 2px solid #e7e7e7;
             @media (max-width: @tablet-width) {
                 border-bottom: 1px solid #e7e7e7;
+                flex-direction: column;
+                
             }
         }
         &--internal {
@@ -37,14 +39,19 @@
     }
     &__logo {
         margin: auto;
-        width: 100px;
         @media (max-width: @desktop-width) {
+            margin: 20px 0;
             margin-left: 50px;
         }
         @media (max-width: @tablet-width) {
-            margin: 14px auto;
+            margin: 15px auto;
         }
     }
+
+    &__logo-img {
+        width: 100px;
+    }
+
     &__search-box {
         display: flex;
         align-items: center;
@@ -52,6 +59,9 @@
         border-right: 2px solid #ececec;
         border-left: 2px solid #ececec;
         margin-left: 85px;
+        @media (max-width: @desktop-width) {
+            margin-left: auto;
+        }
         @media (max-width: @tablet-width) {
             display: none;
         }
@@ -78,51 +88,51 @@
     }
 }
 
-/*Эксперементы
+/*Эксперементы*/
 
-.page-header__search {
-    //Класс для навешивания
-
-    @media (max-width: @tablet-width) {
-        display : flex;
-        width   : 190px;
-        position: relative;
+.page-header {
+    &--active {
+        @media (max-width: @tablet-width) {
+            position: absolute;
+            z-index: 20;
+        }
     }
-}
-
-.page-header__search-box {
-    //Класс для навешивания
-
-    @media (max-width: @tablet-width) {
+    &__search--active {
         //Класс для навешивания
-        display        : flex;
-        justify-content: center;
-        order          : 3;
-        margin         : 0;
-        width          : 100%;
-        max-width      : 767px;
-        border-top     : 2px solid #ececec;
+        @media (max-width: @tablet-width) {
+            display: flex;
+            width: 190px;
+            position: relative;
+        }
+    }
+    &__search-box--active {
+        //Класс для навешивания
+        @media (max-width: @tablet-width) {
+            //Класс для навешивания
+            display: flex;
+            justify-content: center;
+            order: 3;
+            margin: 0;
+            width: 100%;
+            max-width: 767px;
+            border-top: 2px solid #ececec;
+        }
+    }
+    &__search-img--active {
+        //Класс для навешивания
+        @media (max-width: @tablet-width) {
+            margin-top: -9px;
+            position: absolute;
+            top: 50%;
+            left: -77px;
+        }
+    }
+    &__search-text--active {
+        //Класс для навешивания
+        @media (max-width: @tablet-width) {
+            display: flex;
+            margin: 28px 0;
+            font-weight: bold;
+        }
     }
 }
-
-.page-header__search-img {
-
-    //Класс для навешивания
-    @media (max-width: @tablet-width) {
-        margin  : 28px 25px;
-        position: absolute;
-        top     : 3px;
-        left    : -67px;
-    }
-}
-
-.page-header__search-text {
-
-    //Класс для навешивания
-    @media (max-width: @tablet-width) {
-        display: flex;
-        margin : 28px 0;
-
-    }
-}
-*/

@@ -8,6 +8,7 @@
     }
     &__field {
         display: flex;
+        flex-wrap: wrap;
     }
     &__img {
         width: 21px;
@@ -18,49 +19,41 @@
     &__text {
         margin: 27px 0;
         @media (max-width: @desktop-width) {
-            margin: 23px 0;
+            margin: 31px 0;
+        }
+        @media (max-width: @tablet-width) {
+            margin: 28px 0;
         }
     }
 }
 
-/*Эксперементы
+/*Эксперементы*/
 
-.basket { //Класс для навешивания
-
-    @media (max-width: @tablet-width) {
-        display  : flex;
-        justify-content: center;
-
-        order    : 4;
-        margin   : 0;
-        width    : 100%;
-        max-width: 767px;
-        border-top: 2px solid #ececec;
-    }
-
-    &__field { //Класс для навешивания
+.basket {
+    &--active {
         @media (max-width: @tablet-width) {
-            width          : 190px;
-            margin         : 0;
+            display: flex;
+            justify-content: center;
+            order: 4;
+            margin: 0;
+            width: 100%;
+            max-width: 767px;
+            border-top: 2px solid #ececec;
+        }
+    }
+    &__field--active {
+        @media (max-width: @tablet-width) {
+            width: 190px;
+            margin: 0;
             position: relative;
-
         }
     }
-
-    &__img {  //Класс для навешивания
+    &__img--active {
         @media (max-width: @tablet-width) {
-            padding: 28px 25px;
             position: absolute;
-            top     : 3px;
-            left    : -67px;
-        }
-    }
-
-    &__text { //Класс для навешивания
-        @media (max-width: @tablet-width) {
-           text-align: left;
-           margin: 28px 0;
+            top: 50%;
+            left: -77px;
+            margin-top: -9px;
         }
     }
 }
-*/
