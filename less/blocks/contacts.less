@@ -1,153 +1,129 @@
 .contacts {
-    display   : flex;
-    margin    : 0 auto;
+    display: flex;
+    margin: 0 auto;
     margin-top: 150px;
     background-image: url("../img/zigzag-line-desktop.svg");
     background-repeat: repeat-x;
     background-position: 0 0;
     background-size: 5%;
-
     @media (max-width: @desktop-width) {
         flex-wrap: wrap;
-        position : relative;
+        position: relative;
         margin-top: 120px;
         width: 100%;
     }
-
     @media (max-width: @tablet-width) {
         margin-top: 0;
     }
-
     &__img-wrap {
-        width      : 175px;
+        width: 175px;
         margin-left: 100px;
         margin-top: 30px;
-
         @media (max-width: @desktop-width) {
             position: absolute;
-            right   : 50px;
+            right: 50px;
             margin-top: -60px;
         }
-
         @media (max-width: @tablet-width) {
             display: none;
         }
     }
-
     &__img {
-        align-self : flex-start;
-        width      : 47px;
-        margin-top : 130px;
+        align-self: flex-start;
+        width: 47px;
+        margin-top: 130px;
         margin-left: 63px;
         margin-right: 63px;
     }
-
     &__title {
-        font-size : 53px;
+        font-size: 53px;
         padding-top: 100px;
-
         @media (max-width: @desktop-width) {
             display: block;
             margin-top: 0;
         }
-
         @media (max-width: @tablet-width) {
-            font-size    : 18px;
-            margin       : 0 35px;
+            font-size: 18px;
+            margin: 0 35px;
             margin-bottom: 30px;
             padding-top: 55px;
         }
     }
-
     &__wrap {
         margin-top: 30px;
-        display       : flex;
+        display: flex;
         flex-direction: column;
-
         @media (max-width: @desktop-width) {
             flex-direction: row;
-            width         : 100%;
+            width: 100%;
         }
-
         @media (max-width: @tablet-width) {
             flex-wrap: wrap;
-            width         : 100%;
-            margin        : 0 35px;
-            font-size     : 15px;
+            width: 100%;
+            margin: 0 35px;
+            font-size: 15px;
         }
     }
-
     &__address {
-        color    : #444444;
+        color: #444444;
         min-width: 350px;
         max-width: 767px;
         width: auto;
-
         @media (max-width: @desktop-width) {
             margin-left: 6.5%;
         }
     }
-
     &__address-name {
         @media (max-width: @desktop-width) {
             display: flex;
             line-height: 30px;
         }
     }
-
     &__address-name,
     &__mail {
-        margin-top   : 60px;
-
+        margin-top: 60px;
         @media (max-width: @desktop-width) {
-            width     : 345px;
+            width: 345px;
         }
-
         @media (max-width: @tablet-width) {
-            display   : flex;
+            display: flex;
             margin-top: 9px;
-            width     : 337px;
+            width: 337px;
         }
     }
-
     &__span {
         @media (max-width: @desktop-width) {
             margin-right: 26px;
         }
     }
-
     &__btn {
         margin-top: 80px;
-        bottom    : 0;
-        left      : 0;
-
+        bottom: 0;
+        left: 0;
         @media (max-width: @desktop-width) {
             position: absolute;
-            bottom  : 60px;
-            left    : 50%;
+            bottom: 60px;
+            left: 50%;
             margin-left: -130px;
         }
-
         @media (max-width: @tablet-width) {
-            bottom  : 60px;
-            left    : 50%;
-            width   : 260px;
+            bottom: 43px;
+            left: 50%;
+            width: 260px;
             margin-left: -130px;
         }
     }
-
     &__map {
-        width     : 100%;
+        width: 100%;
         margin-top: 100px;
-
         @media (max-width: @desktop-width) {
             margin-bottom: 170px;
-            width        : 100%;
-            height       : 460px;
+            width: 100%;
+            height: 460px;
         }
-
         @media (max-width: @tablet-width) {
             margin-top: 25px;
+            margin-bottom: 135px;
         }
     }
 }

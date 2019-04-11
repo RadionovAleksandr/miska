@@ -3,132 +3,111 @@
 .reviews__text,
 .reviews__data-autor {
     position: relative;
-    z-index : 10;
+    z-index: 10;
 }
 
 .reviews {
-    margin           : 0 100px;
-    margin-top       : 92px;
+    margin: 0 100px;
+    margin-top: 92px;
     background-repeat: no-repeat;
-    margin-bottom    : 70px;
-
+    margin-bottom: 70px;
     @media (max-width: @desktop-width) {
         margin: 0;
     }
-
     &__img {
-        position : absolute;
-        top      : -70px;
+        position: absolute;
+        top: -70px;
         max-width: 350px;
-
         @media (max-width: @tablet-width) {
             display: none;
         }
     }
-
     &__title {
-        font-size  : 53px;
+        font-size: 53px;
         margin-left: 175px;
-
         @media (max-width: @desktop-width) {
             margin-left: 50px;
-
         }
-
         @media (max-width: @tablet-width) {
-            font-size  : 25px;
+            font-size: 25px;
             margin-left: 35px;
         }
     }
-
     &__text {
-        font-size    : 17px;
-        line-height  : 30px;
-        color        : #444444;
-        max-width    : 770px;
+        font-size: 17px;
+        line-height: 30px;
+        color: #444444;
+        max-width: 770px;
         margin-bottom: 110px;
-        margin-left  : 175px;
-
+        margin-left: 175px;
         @media (max-width: @desktop-width) {
-            margin-right  : 7.5%;
-            margin-left   : 7.5%;
+            margin-right: 7.5%;
+            margin-left: 7.5%;
             width: 85%;
             max-width: 1199px;
         }
-
         @media (max-width: @tablet-width) {
-            margin-right  : 35px;
-            margin-left   : 35px;
-            display       : flex;
+            margin-right: 35px;
+            margin-left: 35px;
+            display: flex;
             flex-direction: column;
             margin-bottom: 45px;
         }
     }
-
     &__data-autor {
         margin-left: 0;
-        margin-top : 52px;
-        color      : #444444;
-
+        margin-top: 52px;
+        color: #444444;
         @media (max-width: @desktop-width) {
             margin-left: 0;
         }
     }
-
     &__autor-name {
-        color      : black;
+        color: black;
         font-weight: bold;
     }
-
     &__btn {
         position: absolute;
-        top     : -90px;
-        right   : -105px;
-        width   : 175px;
-
+        top: -90px;
+        right: -105px;
+        width: 175px;
         @media (max-width: @desktop-width) {
             right: 2.5%;
         }
-
         @media (max-width: @tablet-width) {
-            position  : static;
+            position: static;
             margin: 0 auto;
             margin-top: 106px;
-            width     : 260px;
+            width: 260px;
         }
     }
-
     &__toggle {
         position: absolute;
-        display : flex;
-        width   : 175px;
-        bottom  : 0;
-        right   : -10px;
-
+        display: flex;
+        width: 175px;
+        bottom: 0;
+        right: -10px;
         @media (max-width: @desktop-width) {
-            right   : 7.5%;
+            right: 7.5%;
         }
-
         @media (max-width: @tablet-width) {
             justify-content: center;
             bottom: 87px;
-            left  : 50%;
-            width : 260px;
+            left: 50%;
+            width: 260px;
             margin-left: -130px;
         }
     }
-
     &__togl-item {
-        padding         : 0 20px;
-        outline         : none;
-        border          : none;
+        padding: 0 20px;
+        outline: none;
+        border: none;
         background-color: transparent;
-
         @media (max-width: @tablet-width) {
             padding: 40px;
         }
         @media (max-width: @tablet-width) {
-            padding         : 10px 40px;
+            padding: 10px 40px;
             border: 1px solid #e7e7e7;
         }
     }

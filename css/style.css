@@ -484,23 +484,30 @@ a {
 }
 .service__item {
   width: 50%;
+  background-repeat: no-repeat;
+  background-position: 90% 40%;
 }
 @media (max-width: 768px) {
   .service__item {
     width: 100%;
+    background-position: 85% 40%;
   }
 }
 .service__item--interior {
   background-color: #63d1bb;
+  background-image: url("../img/interior.svg");
+  background-size: 46px;
 }
 .service__item--toys {
   background-color: #56c3b2;
+  background-image: url("../img/toy-svg.svg");
+  background-size: 57px;
 }
 .service__text {
   width: 125px;
-  margin: 30px 0;
-  margin-left: 36px;
+  margin: 32px 0;
   margin-bottom: 40px;
+  margin-left: 36px;
   font-size: 20px;
   line-height: 30px;
   font-weight: bold;
@@ -527,11 +534,6 @@ a {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   position: relative;
   margin: 0 auto;
   padding-top: 130px;
@@ -1137,7 +1139,7 @@ a {
 }
 @media (max-width: 768px) {
   .contacts__btn {
-    bottom: 60px;
+    bottom: 43px;
     left: 50%;
     width: 260px;
     margin-left: -130px;
@@ -1157,6 +1159,7 @@ a {
 @media (max-width: 768px) {
   .contacts__map {
     margin-top: 25px;
+    margin-bottom: 135px;
   }
 }
 .page-footer {
@@ -1168,6 +1171,11 @@ a {
   margin: 0 auto;
   margin-top: 70px;
   background-color: #f1f1f1;
+}
+@media (max-width: 768px) {
+  .page-footer {
+    margin-top: 0px;
+  }
 }
 .page-footer--internal {
   max-width: 1150px;

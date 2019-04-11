@@ -1,88 +1,75 @@
 .page-footer {
-    width           : 100%;
-    max-width       : 1250px;
-    display         : flex;
-    margin          : 0 auto;
-    margin-top      : 70px;
+    width: 100%;
+    max-width: 1250px;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 70px;
     background-color: #f1f1f1;
-
+    @media (max-width: @tablet-width) {
+        margin-top: 0px;
+    }
     &--internal {
         max-width: 1150px;
     }
-
-    @media (max-width : @tablet-width) {
-        width         : 100%;
+    @media (max-width: @tablet-width) {
+        width: 100%;
         flex-direction: column;
     }
-
     &__column {
-        margin-top   : 50px;
+        margin-top: 50px;
         margin-bottom: 50px;
-
         @media (max-width: @tablet-width) {
-            width          : 260px;
-            margin         : 0 auto;
-            margin-top     : 23px;
-            padding-bottom : 27px;
-            display        : flex;
+            width: 260px;
+            margin: 0 auto;
+            margin-top: 23px;
+            padding-bottom: 27px;
+            display: flex;
             justify-content: center;
         }
     }
-
     &__column--left {
-        margin-left : 50px;
+        margin-left: 50px;
         margin-right: auto;
-
         @media (max-width: @tablet-width) {
             display: none;
         }
     }
-
     &__column--middle {
         margin-left: 70px;
-
         @media (max-width: @tablet-width) {
             border-bottom: 2px solid #e5e5e5;
-            margin-left  : auto;
-            margin-right : auto;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
-
     &__social-img--inst {
         width: 22px;
     }
-
     &__social-img--fb {
-        width : 15px;
+        width: 15px;
         margin: 0 32px;
     }
-
     &__social-img--tw {
         width: 24px;
     }
-
     &__column--right {
         margin-right: 50px;
-        margin-left : auto;
-
+        margin-left: auto;
         @media (max-width: @tablet-width) {
             border-bottom: 2px solid #e5e5e5;
-            margin-right : auto;
+            margin-right: auto;
         }
     }
-
     .page-footer__developer {
         display: flex;
     }
-
     &__text {
         font-weight: bold;
         line-height: 38px;
-        text-align : middle;
+        text-align: middle;
     }
-
     &__img-dev {
         margin-left: 30px;
-        width      : 27px;
+        width: 27px;
     }
 }

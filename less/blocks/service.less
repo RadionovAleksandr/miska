@@ -1,81 +1,75 @@
 .service {
     position: relative;
-
     &__title {
-        max-width     : 620px;
-        min-width     : 260px;
-        margin        : 0 auto;
-        padding-top   : 155px;
+        max-width: 620px;
+        min-width: 260px;
+        margin: 0 auto;
+        padding-top: 155px;
         padding-bottom: 355px;
-        font-size     : 53px;
-        line-height   : 58.5px;
-        text-align    : center;
-        font-weight   : bold;
-
+        font-size: 53px;
+        line-height: 58.5px;
+        text-align: center;
+        font-weight: bold;
         @media (max-width: @desktop-width) {
-            font-size     : 43px;
-            line-height   : 51.23px;
+            font-size: 43px;
+            line-height: 51.23px;
             padding-bottom: 370px;
         }
-
         @media (max-width: @tablet-width) {
-
-            font-size     : 27px;
-            line-height   : 30.74px;
+            font-size: 27px;
+            line-height: 30.74px;
             padding-bottom: 390px;
         }
     }
-
     &__wrap {
-        display  : flex;
-        margin   : 0 auto;
+        display: flex;
+        margin: 0 auto;
         max-width: 1050px;
-
         @media (max-width: @desktop-width) {
             margin: 0 50px;
         }
-
         @media (max-width: @tablet-width) {
-            margin        : 0;
+            margin: 0;
             flex-direction: column;
         }
     }
-
     &__item {
         width: 50%;
-
+        background-repeat: no-repeat;
+        background-position: 90% 40%;
         @media (max-width: @tablet-width) {
             width: 100%;
+            background-position: 85% 40%;
         }
     }
-
     &__item--interior {
         background-color: #63d1bb;
+        background-image: url("../img/interior.svg");
+        background-size: 46px;
     }
-
     &__item--toys {
         background-color: #56c3b2;
+        background-image: url("../img/toy-svg.svg");
+        background-size: 57px;
     }
-
     &__text {
-        width      : 125px;
-        margin     : 30px 0;
-        margin-left: 36px;
+        width: 125px;
+        margin: 32px 0;
         margin-bottom: 40px;
-        font-size  : 20px;
+        margin-left: 36px;
+        font-size: 20px;
         line-height: 30px;
         font-weight: bold;
-        color      : white;
+        color: white;
     }
-
     &__zigzag-img {
         width: 100%;
         min-height: 40px;
         position: absolute;
         bottom: -1px;
         background-image: url("../img/zigzag-fill-desktop.svg");
-    background-repeat: repeat-x;
-    background-position: 0% 100%;
-    background-size: 5%;
+        background-repeat: repeat-x;
+        background-position: 0% 100%;
+        background-size: 5%;
     }
 }
