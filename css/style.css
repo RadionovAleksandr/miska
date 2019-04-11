@@ -366,11 +366,11 @@ a {
   margin: auto 0;
 }
 .basket__text {
-  margin: 25px 0;
+  margin: 27px 0;
 }
 @media (max-width: 1200px) {
   .basket__text {
-    margin: 21px 0;
+    margin: 23px 0;
   }
 }
 /*Эксперементы
