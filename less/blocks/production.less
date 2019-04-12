@@ -1,44 +1,69 @@
 .production {
-    display      : flex;
+    display: flex;
     margin-bottom: 110px;
-
     @media (max-width: @desktop-internal-width) {
         flex-direction: column;
     }
-
+    @media (max-width: @tablet-width) {
+        padding: 0 30px;
+        margin: 0;
+    }
     &__img-video {
         width: 680px;
-
+        margin: 0 auto;
         @media (max-width: @desktop-internal-width) {
             width: 668px;
         }
-
         @media (max-width: @tablet-width) {
-            width: 260px;
+            width: 100%;
         }
     }
-
     &__wrap {
+        margin: 0 auto;
         width: 370px;
+        @media (max-width: @desktop-internal-width) {
+            width: 85%;
+            margin: 0 7.5%;
+            position: relative;
+        }
+        @media (max-width: @tablet-width) {
+            width: 80%;
+            padding: 0 28px;
+            font-size: 13px;
 
-
+        }
     }
-
-    &__img,
-    &__title,
-    &__text,
+    &__title {
+        margin: 20px 80px;
+        @media (max-width: @desktop-internal-width) {
+            margin-left: 15.7%;
+        }
+    }
+    &__text {
+        margin: 20px 80px;
+        @media (max-width: @desktop-internal-width) {
+            margin-left: 6%;
+        }
+    }
+    &__img {
+        margin-top: 45px;
+        margin-bottom: 10px;
+        width: 32px;
+        @media (max-width: @desktop-internal-width) {
+            position: absolute;
+            margin: 0;
+            left: 6%;
+            top: 20px;
+        }
+    }
     &__btn {
         margin: 20px 80px;
-    }
-
-    &__img {
-        margin-top   : 45px;
-        margin-bottom: 10px;
-        width        : 32px;
-    }
-
-    &__btn {
         margin-top: 30px;
-        width     : 230px
+        width: 230px;
+        @media (max-width: @desktop-internal-width) {
+            margin-left: 6%;
+            margin-right: 6%;
+            width: 88%;
+        }
     }
 }

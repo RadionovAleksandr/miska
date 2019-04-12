@@ -12,6 +12,19 @@
     }
 
     @media (max-width: @tablet-width) {
-        max-width: 787px;
+        max-width: 767px;
+    }
+
+    &-internal {
+        background-color: white;
+        width: 100%;
+        max-width: 1150px;
+        margin: 0 auto;
+        @media (max-width: @desktop-internal-width) {
+            max-width: 1149px;
+        }
+        @media (max-width: @tablet-width) {
+            max-width: 767px;
+        }
     }
 }

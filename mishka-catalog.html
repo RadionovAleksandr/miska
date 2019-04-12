@@ -17,20 +17,22 @@
             <a class="page-header__logo" href="#">
                 <img class="page-header__logo-img" src="img/mishka-logo-desktop.svg" alt="Логотип">
             </a>
+            <button class="main-nav__toggle main-nav__toggle--closed" type="button"><span class="hidden">Открыть
+                    меню</span></button>
             <nav class="main-nav main-nav--top">
-                <button class="main-nav__toggle hidden" type="button">открыть меню</button>
                 <ul class="main-nav__list main-nav__list--top site-list">
                     <li class="site-list__item">
-                        <a href="#">Каталог товаров</a>
+                        <a class="page-header__link" href="#">Каталог товаров</a>
                     </li>
                     <li class="site-list__item">
-                        <a href="#">Вязание на заказ</a>
+                        <a class="page-header__link" href="#">Вязание на заказ</a>
                     </li>
                 </ul>
             </nav>
             <div class="page-header__search-box">
                 <a class="page-header__search" href="#">
                     <img class="page-header__search-img" src="img/search.svg" alt="Поиск">
+                    <div class="page-header__search-text">Поиск по сайту</div>
                 </a>
             </div>
             <div class="basket">
@@ -42,69 +44,80 @@
                 </a>
             </div>
         </div>
-        <div class="page-header__wrap page-header__wrap--bottom  page-header__wrap--internal">
+        <div class="page-header__wrap page-header__wrap--bottom page-header__wrap--internal">
 
-            <nav class="main-nav main-nav--bottom main-nav">
+            <nav class="main-nav main-nav--bottom">
                 <ul class="main-nav__list main-nav__list--bottom site-list">
-                    <li class="site-list__item site-list__item--bottom">
-                        <a href="#">Новые поступления</a>
-                    </li>
-                    <li class="site-list__item site-list__item--bottom">
-                        <a href="#">Распродажа</a>
-                    </li>
+                    <a href="#">
+                        <li class="site-list__item site-list__item--bottom">
+                            Новые поступления
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="site-list__item site-list__item--bottom">
+                            Распродажа
+                        </li>
+                    </a>
                 </ul>
             </nav>
-            <p class="page-header__text--small">Бесплатная доставка по России</p>
+            <p class="page-header__text">Бесплатная доставка по России</p>
         </div>
 
     </header>
 
-    <main class="page-main page-main--inernal">
+    <main class="page-main-internal">
         <section class="catalog">
             <h1 class="catalog__title">Каталог товаров</h1>
             <div class="catalog-card">
                 <a class="catalog-card__field" href=""><img class="catalog-card__img" src="img/photo-1-desktop.jpg"
                         alt="">
-                    <p class="catalog-card__title">
-                        Зайчик-попрыгайчик<br><span class="catalog-card-__text">Рост 30см, вес 200г</span>
-                    </p>
-                    <hr>
-                    <p class="catalog-card__price">1200 руб.</p>
+                    <div class="catalog-card__text-wrap">
+                        <p class="catalog-card__title">
+                            Зайчик-попрыгайчик<br><span class="catalog-card-__text">Рост 30см, вес 200г</span>
+                        </p>
+                       
+                        <p class="catalog-card__price">1200 руб.</p>
+                    </div>
                 </a>
             </div>
             <div class="catalog-card">
                 <a class="catalog-card__field" href=""><img class="catalog-card__img" src="img/photo-2-desktop.jpg"
                         alt="">
-                    <p class="catalog-card__title">
-                        Корзинка для белья<br><span class="catalog-card-__text">Диаметр 15см, высота 10см</span>
-                    </p>
-                    <hr>
-                    <p class="catalog-card__price">690 руб.</p>
+                    <div class="catalog-card__text-wrap">
+                        <p class="catalog-card__title">
+                            Корзинка для белья<br><span class="catalog-card__text">Диаметр 15см, высота 10см</span>
+                        </p>
+                        
+                        <p class="catalog-card__price">690 руб.</p>
+                    </div>
                 </a>
             </div>
             <div class="catalog-card">
                 <a class="catalog-card__field" href=""><img class="catalog-card__img" src="img/photo-3-desktop.jpg"
                         alt="">
-                    <p class="catalog-card__title">
-                        Большая корзинка для игрушек<br><span class="catalog-card-__text">Диаметр 30см, высота
-                            30см</span>
-                    </p>
-                    <hr>
-                    <p class="catalog-card__price">1500 руб.</p>
+                    <div class="catalog-card__text-wrap">
+                        <p class="catalog-card__title">
+                            Большая корзинка для игрушек<br><span class="catalog-card__text">Диаметр 30см, высота
+                                30см</span>
+                        </p>
+                       
+                        <p class="catalog-card__price">1500 руб.</p>
+                    </div>
                 </a>
             </div>
+            <div class="production">
+                    <h1 class="hidden">Прозиводство товара</h1>
+                    <img class="production__img-video" src="img/play.jpg" alt="">
+                    <div class="production__wrap">
+                        <img class="production__img" src="img/video.svg" alt="фоновая иконка">
+                        <p class="production__title">Процесс производства</p>
+                        <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подбробное видео о
+                            том, как появляются наши товары</p>
+                        <button class="production__btn button">Сделать заказ</button>
+                    </div>
+                </div>
         </section>
-        <div class="production">
-            <h1 class="hidden">Прозиводство товара</h1>
-            <img class="production__img-video" src="img/play.jpg" alt="">
-            <div class="production__wrap">
-                <img class="production__img" src="img/video.svg" alt="фоновая иконка">
-                <p class="production__title">Процесс производства</p>
-                <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подбробное видео о
-                    том, как появляются наши товары</p>
-                <button class="production__btn button">Сделать заказ</button>
-            </div>
-        </div>
+    
     </main>
 
     <footer class="page-footer page-footer--internal">
@@ -131,7 +144,7 @@
             </a>
         </div>
     </footer>
-
+    <script src="js/mishka.js"></script>
 </body>
 
 </html>

@@ -11,26 +11,27 @@
 </head>
 
 <body>
-
     <header class="page-header page-header--inernal">
         <div class="page-header__wrap page-header__wrap--top">
             <a class="page-header__logo" href="#">
                 <img class="page-header__logo-img" src="img/mishka-logo-desktop.svg" alt="Логотип">
             </a>
+            <button class="main-nav__toggle main-nav__toggle--closed" type="button"><span class="hidden">Открыть
+                    меню</span></button>
             <nav class="main-nav main-nav--top">
-                <button class="main-nav__toggle hidden" type="button">открыть меню</button>
                 <ul class="main-nav__list main-nav__list--top site-list">
                     <li class="site-list__item">
-                        <a href="#">Каталог товаров</a>
+                        <a class="page-header__link" href="#">Каталог товаров</a>
                     </li>
                     <li class="site-list__item">
-                        <a href="#">Вязание на заказ</a>
+                        <a class="page-header__link" href="#">Вязание на заказ</a>
                     </li>
                 </ul>
             </nav>
             <div class="page-header__search-box">
                 <a class="page-header__search" href="#">
                     <img class="page-header__search-img" src="img/search.svg" alt="Поиск">
+                    <div class="page-header__search-text">Поиск по сайту</div>
                 </a>
             </div>
             <div class="basket">
@@ -42,16 +43,20 @@
                 </a>
             </div>
         </div>
-        <div class="page-header__wrap page-header__wrap--bottom  page-header__wrap--internal">
+        <div class="page-header__wrap page-header__wrap--bottom page-header__wrap--internal">
 
-            <nav class="main-nav main-nav--bottom main-nav">
+            <nav class="main-nav main-nav--bottom">
                 <ul class="main-nav__list main-nav__list--bottom site-list">
-                    <li class="site-list__item site-list__item--bottom">
-                        <a href="#">Новые поступления</a>
-                    </li>
-                    <li class="site-list__item site-list__item--bottom">
-                        <a href="#">Распродажа</a>
-                    </li>
+                    <a href="#">
+                        <li class="site-list__item site-list__item--bottom">
+                            Новые поступления
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="site-list__item site-list__item--bottom">
+                            Распродажа
+                        </li>
+                    </a>
                 </ul>
             </nav>
             <p class="page-header__text">Бесплатная доставка по России</p>
@@ -59,7 +64,7 @@
 
     </header>
 
-    <main class="page-main-form">
+    <main class="page-main-internal">
         <div class="page-main-form__wrap">
             <h1 class="page-main-form__title">Вязание на заказ</h1>
             <div class="page-main-form__image">
@@ -74,11 +79,13 @@
                 <div class="form-order__wrap form-order__wrap--color">
                     <div class="form-order__input-wrap">
                         <input class="form-order__radio" id="typeInterior" type="radio" name="type" value="interior">
-                        <label for="typeInterior">Аксессуар для интерьера</label>
+                        <label class="form-order__input-text hidden" for="typeInterior">Аксессуар для интерьера</label>
+                        <span class="radio-indicator"></span>
                     </div>
                     <div class="form-order__input-wrap">
                         <input class="form-order__radio" id="typeToy" type="radio" name="type" value="toy">
-                        <label for="typeToy">Детская игрушка</label>
+                        <label class="form-order__input-text hidden" for="typeToy">Детская игрушка</label>
+                        <span class="radio-indicator"></span>
                     </div>
                 </div>
             </div>
@@ -87,40 +94,51 @@
                 <div class="form-order__wrap">
                     <div class="form-order__column">
                         <div class="form-order__item">
-                            <input class="form-order__checkbox" id="colorWhite" type="checkbox" name="white"
-                                value="color">
-                            <label for="colorWhite">Белый</label>
+                            <label class="form-order__login-checkbox" for="colorWhite">
+                                <input class="form-order__checkbox hidden" id="colorWhite" type="checkbox" name="white"
+                                    value="color">
+                                <span class="checkbox-indicator"></span>
+                                Белый</label>
                         </div>
                         <div class="form-order__item">
-                            <input class="form-order__checkbox" id="colorBlack" type="checkbox" name="black"
-                                value="color">
-                            <label for="colorBlack">Черный</label>
+                            <label class="form-order__login-checkbox" for="colorBlack">
+                                <input class="form-order__checkbox hidden" id="colorBlack" type="checkbox" name="black"
+                                    value="color">
+                                <span class="checkbox-indicator"></span>
+                                Черный</label>
                         </div>
-
                     </div>
                     <div class="form-order__column">
                         <div class="form-order__item">
-                            <input class="form-order__checkbox" id="colorGrey" type="checkbox" name="grey"
-                                value="color">
-                            <label for="colorGrey">Серый</label>
+                            <label class="form-order__login-checkbox" for="colorGrey">
+                                <input class="form-order__checkbox hidden" id="colorGrey" type="checkbox" name="grey"
+                                    value="color">
+                                <span class="checkbox-indicator"></span>
+                                Серый</label>
                         </div>
                         <div class="form-order__item">
-                            <input class="form-order__checkbox" id="colorPink" type="checkbox" name="pink"
-                                value="color">
-                            <label for="colorPink">Розовый</label>
+                            <label class="form-order__login-checkbox" for="colorPink">
+                                <input class="form-order__checkbox hidden" id="colorPink" type="checkbox" name="pink"
+                                    value="color">
+                                <span class="checkbox-indicator"></span>
+                                Розовый</label>
                         </div>
-
                     </div>
                     <div class="form-order__column">
                         <div class="form-order__item">
-                            <input class="form-order__checkbox" id="colorTiffani" type="checkbox" name="tiffani"
-                                value="color">
-                            <label for="colorTiffani">"Тиффани"</label>
+                            <label class="form-order__login-checkbox" for="colorTiffani">
+                                <input class="form-order__checkbox  hidden" id="colorTiffani" type="checkbox"
+                                    name="tiffani" value="color">
+                                <span class="checkbox-indicator"></span>"Тиффани"
+                            </label>
                         </div>
                         <div class="form-order__item">
-                            <input class="form-order__checkbox" id="colorOrange" type="checkbox" name="orange"
-                                value="color">
-                            <label for="colorOrange">Оранжевый</label>
+                            <label class="form-order__login-checkbox " for="colorOrange">
+                                <input class="form-order__checkbox hidden" id="colorOrange" type="checkbox"
+                                    name="orange" value="color">
+                                <span class="checkbox-indicator"></span>Оранжевый
+                            </label>
+
                         </div>
                     </div>
                 </div>
@@ -151,19 +169,19 @@
             <div class="form-order form-order--contacts">
                 <div class="form-order__item form-order__item--bottom">
                     <label class="form-order__title" for="userPhone">Тел</label>
-                    <input class="form-order__phone" id="userPhone" type="text" name="phone" placeholder="+7xxx xx xx*"
-                        required>
+                    <input class="form-order__text form-order__phone" id="userPhone" type="text" name="phone"
+                        placeholder="+7XXX XX XX*" required>
                 </div>
                 <div class="form-order__item form-order__item--bottom">
                     <label class="form-order__title" for="userMail">e-mail</label>
-                    <input class="form-order__mail" id="userMail" type="email" name="email" placeholder="Ваш Email*"
-                        required>
+                    <input class="form-order__text form-order__mail" id="userMail" type="email" name="email"
+                        placeholder="Ваш Email*" required>
                 </div>
                 <div class="form-order__item form-order__item--bottom">
                     <label class="form-order__title" id="add-info">Доп</label>
                     <textarea class="form-order__add-info" name="add-info" rows="10"
                         placeholder="Опишите все ваши пожелания к заказу">
-                </textarea>
+                    </textarea>
                 </div>
             </div>
             <div class="form-order__wrap-btn">
@@ -197,7 +215,7 @@
             </a>
         </div>
     </footer>
-
+    <script src="js/mishka.js"></script>
 </body>
 
 </html>
