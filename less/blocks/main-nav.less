@@ -30,8 +30,18 @@
     &__list {
         display: flex;
         flex-wrap: wrap;
-        @media (max-width: @tablet-width) {
-            display: none;
+        @media (max-width: @tablet-width) {}
+        &--top {
+            @media (max-width: @tablet-width) {
+                display: flex;
+                position: static;
+                order: 2;
+                margin: 0;
+                width: 100%;
+                max-width: 767px;
+                flex-direction: column;
+                align-content: center;
+            }
         }
     }
     &--bottom {
@@ -50,6 +60,7 @@
             position: static;
             order: 1;
             margin-left: 0;
+            display: none;
         }
     }
 }
@@ -61,8 +72,13 @@
     padding: 32px 0;
     padding-right: 35px;
     list-style: none;
+    @media (max-width: @tablet-width) {
+        padding: 28px 130%;
+        border-top: 2px solid #ececec;
+        width: 190px;
+    }
     &--bottom {
-        padding: 25px 0;
+        margin: 25px 0;
         padding-right: 35px;
     }
 }
@@ -92,25 +108,7 @@
         background-color: #221f1f;
         transform: rotate(-45deg)
     }
-    &__list--top-active {
-        //Класс для навешивания              
-        @media (max-width: @tablet-width) {
-            display: flex;
-            position: static;
-            order: 2;
-            margin: 0;
-            width: 100%;
-            max-width: 767px;
-            flex-direction: column;
-            align-content: center;
-        }
-    }
-    .site-list__item--active {
-        //Класс для навешивания
-        @media (max-width: @tablet-width) {
-            padding: 28px 130%;
-            border-top: 2px solid #ececec;
-            width: 190px;
-        }
+    &--top-active {
+        display: flex; 
     }
 }

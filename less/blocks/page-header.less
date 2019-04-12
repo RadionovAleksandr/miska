@@ -21,7 +21,6 @@
     }
     &__wrap {
         display: flex;
-      
         &--bottom {
             background-color: #f9f9f9;
         }
@@ -30,7 +29,8 @@
             @media (max-width: @tablet-width) {
                 border-bottom: 1px solid #e7e7e7;
                 flex-direction: column;
-                
+                width: 100%;
+                background-color: white;
             }
         }
         &--internal {
@@ -47,14 +47,13 @@
             margin: 15px auto;
         }
     }
-
     &__logo-img {
         width: 100px;
     }
-
     &__search-box {
         display: flex;
-        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
         width: 85px;
         border-right: 2px solid #ececec;
         border-left: 2px solid #ececec;
@@ -66,13 +65,33 @@
             display: none;
         }
     }
+    &__search {
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        @media (max-width: @tablet-width) {
+            width: 190px;
+            position: relative;
+        }
+    }
     &__search-img {
         width: 18px;
         height: 19px;
-        margin: auto 32px;
+        @media (max-width: @tablet-width) {
+            margin-top: -9px;
+            position: absolute;
+            top: 50%;
+            left: -77px;
+        }
     }
     &__search-text {
         display: none;
+        @media (max-width: @tablet-width) {
+            display: flex;
+            margin: 28px 0;
+            font-weight: bold;
+        }
     }
     &__text {
         margin: 0;
@@ -91,24 +110,14 @@
 /*Эксперементы*/
 
 .page-header {
-    &--active {
+    &__wrap--top-active {
         @media (max-width: @tablet-width) {
             position: absolute;
             z-index: 20;
         }
     }
-    &__search--active {
-        //Класс для навешивания
-        @media (max-width: @tablet-width) {
-            display: flex;
-            width: 190px;
-            position: relative;
-        }
-    }
     &__search-box--active {
-        //Класс для навешивания
         @media (max-width: @tablet-width) {
-            //Класс для навешивания
             display: flex;
             justify-content: center;
             order: 3;
@@ -116,23 +125,6 @@
             width: 100%;
             max-width: 767px;
             border-top: 2px solid #ececec;
-        }
-    }
-    &__search-img--active {
-        //Класс для навешивания
-        @media (max-width: @tablet-width) {
-            margin-top: -9px;
-            position: absolute;
-            top: 50%;
-            left: -77px;
-        }
-    }
-    &__search-text--active {
-        //Класс для навешивания
-        @media (max-width: @tablet-width) {
-            display: flex;
-            margin: 28px 0;
-            font-weight: bold;
         }
     }
 }

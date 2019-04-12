@@ -9,12 +9,23 @@
     &__field {
         display: flex;
         flex-wrap: wrap;
+        @media (max-width: @tablet-width) {
+            width: 190px;
+            margin: 0;
+            position: relative;
+        }
     }
     &__img {
         width: 21px;
         height: 18px;
         padding: 0 31px;
         margin: auto 0;
+        @media (max-width: @tablet-width) {
+            position: absolute;
+            top: 50%;
+            left: -77px;
+            margin-top: -9px;
+        }
     }
     &__text {
         margin: 27px 0;
@@ -39,21 +50,6 @@
             width: 100%;
             max-width: 767px;
             border-top: 2px solid #ececec;
-        }
-    }
-    &__field--active {
-        @media (max-width: @tablet-width) {
-            width: 190px;
-            margin: 0;
-            position: relative;
-        }
-    }
-    &__img--active {
-        @media (max-width: @tablet-width) {
-            position: absolute;
-            top: 50%;
-            left: -77px;
-            margin-top: -9px;
         }
     }
 }
