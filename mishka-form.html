@@ -4,8 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>mishka</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic,cyrillic-ext,latin-ext"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -78,14 +77,16 @@
                 <div class="form-order__title">Тип</div>
                 <div class="form-order__wrap form-order__wrap--color">
                     <div class="form-order__input-wrap">
-                        <input class="form-order__radio" id="typeInterior" type="radio" name="type" value="interior">
-                        <label class="form-order__input-text hidden" for="typeInterior">Аксессуар для интерьера</label>
-                        <span class="radio-indicator"></span>
+                        <label class="form-order__login-radio" for="typeInterior">
+                            <input class="form-order__radio hidden" id="typeInterior" type="radio" name="type" value="interior">
+                            <span class="form-order__radio-indicator"></span>Аксессуар для интерьера
+                        </label>
                     </div>
                     <div class="form-order__input-wrap">
-                        <input class="form-order__radio" id="typeToy" type="radio" name="type" value="toy">
-                        <label class="form-order__input-text hidden" for="typeToy">Детская игрушка</label>
-                        <span class="radio-indicator"></span>
+                        <label class="form-order__login-radio" for="typeToy">
+                            <input class="form-order__radio hidden" id="typeToy" type="radio" name="type" value="toy">
+                            <span class="form-order__radio-indicator"></span>
+                            Детская игрушка</label>
                     </div>
                 </div>
             </div>
@@ -93,49 +94,43 @@
                 <div class="form-order__title">Цвет</div>
                 <div class="form-order__wrap">
                     <div class="form-order__column">
-                        <div class="form-order__item">
+                        <div class="form-order__item form-order__item--top">
                             <label class="form-order__login-checkbox" for="colorWhite">
-                                <input class="form-order__checkbox hidden" id="colorWhite" type="checkbox" name="white"
-                                    value="color">
+                                <input class="form-order__checkbox hidden" id="colorWhite" type="checkbox" name="white" value="color">
                                 <span class="checkbox-indicator"></span>
                                 Белый</label>
                         </div>
-                        <div class="form-order__item">
+                        <div class="form-order__item form-order__item--top">
                             <label class="form-order__login-checkbox" for="colorBlack">
-                                <input class="form-order__checkbox hidden" id="colorBlack" type="checkbox" name="black"
-                                    value="color">
+                                <input class="form-order__checkbox hidden" id="colorBlack" type="checkbox" name="black" value="color">
                                 <span class="checkbox-indicator"></span>
                                 Черный</label>
                         </div>
                     </div>
                     <div class="form-order__column">
-                        <div class="form-order__item">
+                        <div class="form-order__item form-order__item--top">
                             <label class="form-order__login-checkbox" for="colorGrey">
-                                <input class="form-order__checkbox hidden" id="colorGrey" type="checkbox" name="grey"
-                                    value="color">
+                                <input class="form-order__checkbox hidden" id="colorGrey" type="checkbox" name="grey" value="color">
                                 <span class="checkbox-indicator"></span>
                                 Серый</label>
                         </div>
-                        <div class="form-order__item">
+                        <div class="form-order__item form-order__item--top">
                             <label class="form-order__login-checkbox" for="colorPink">
-                                <input class="form-order__checkbox hidden" id="colorPink" type="checkbox" name="pink"
-                                    value="color">
+                                <input class="form-order__checkbox hidden" id="colorPink" type="checkbox" name="pink" value="color">
                                 <span class="checkbox-indicator"></span>
                                 Розовый</label>
                         </div>
                     </div>
                     <div class="form-order__column">
-                        <div class="form-order__item">
+                        <div class="form-order__item form-order__item--top">
                             <label class="form-order__login-checkbox" for="colorTiffani">
-                                <input class="form-order__checkbox  hidden" id="colorTiffani" type="checkbox"
-                                    name="tiffani" value="color">
+                                <input class="form-order__checkbox  hidden" id="colorTiffani" type="checkbox" name="tiffani" value="color">
                                 <span class="checkbox-indicator"></span>"Тиффани"
                             </label>
                         </div>
-                        <div class="form-order__item">
+                        <div class="form-order__item form-order__item--top">
                             <label class="form-order__login-checkbox " for="colorOrange">
-                                <input class="form-order__checkbox hidden" id="colorOrange" type="checkbox"
-                                    name="orange" value="color">
+                                <input class="form-order__checkbox hidden" id="colorOrange" type="checkbox" name="orange" value="color">
                                 <span class="checkbox-indicator"></span>Оранжевый
                             </label>
 
@@ -148,20 +143,17 @@
                 <div class="form-order__name-data-wrap">
                     <div class="form-order__item form-order__item--middle">
                         <label for="textName">Имя:</label>
-                        <input class="form-order__text" id="textName" type="text" name="name"
-                            placeholder="Введите ваше имя*">
+                        <input class="form-order__text" id="textName" type="text" name="name" placeholder="Введите ваше имя*">
 
                     </div>
                     <div class="form-order__item form-order__item--middle">
                         <label for="textSecondname">Фамилия:</label>
-                        <input class="form-order__text" id="textSecondname" type="text" name="Secondname"
-                            placeholder="Введите вашу фамилию*">
+                        <input class="form-order__text" id="textSecondname" type="text" name="Secondname" placeholder="Введите вашу фамилию*">
 
                     </div>
                     <div class="form-order__item form-order__item--middle">
                         <label for="textPatronymic">Отчество:</label>
-                        <input class="form-order__text" id="textPatronymic" type="text" name="Patronymic"
-                            placeholder="Отчество, если желаете">
+                        <input class="form-order__text" id="textPatronymic" type="text" name="Patronymic" placeholder="Отчество, если желаете">
 
                     </div>
                 </div>
@@ -169,18 +161,15 @@
             <div class="form-order form-order--contacts">
                 <div class="form-order__item form-order__item--bottom">
                     <label class="form-order__title" for="userPhone">Тел</label>
-                    <input class="form-order__text form-order__phone" id="userPhone" type="text" name="phone"
-                        placeholder="+7XXX XX XX*" required>
+                    <input class="form-order__text form-order__phone" id="userPhone" type="text" name="phone" placeholder="+7XXX XX XX*" required="">
                 </div>
                 <div class="form-order__item form-order__item--bottom">
                     <label class="form-order__title" for="userMail">e-mail</label>
-                    <input class="form-order__text form-order__mail" id="userMail" type="email" name="email"
-                        placeholder="Ваш Email*" required>
+                    <input class="form-order__text form-order__mail" id="userMail" type="email" name="email" placeholder="Ваш Email*" required="">
                 </div>
                 <div class="form-order__item form-order__item--bottom">
                     <label class="form-order__title" id="add-info">Доп</label>
-                    <textarea class="form-order__add-info" name="add-info" rows="10"
-                        placeholder="Опишите все ваши пожелания к заказу">
+                    <textarea class="form-order__add-info" name="add-info" rows="10" placeholder="Опишите все ваши пожелания к заказу">
                     </textarea>
                 </div>
             </div>
