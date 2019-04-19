@@ -15,6 +15,8 @@ var rename = require ("gulp-rename");
 var server = require("browser-sync").create();
 var run = require ("run-sequence");
 var del = require("del");
+var webp = require("imagemin-webp");
+var extReplace = require("gulp-ext-replace");
 
 gulp.task("clean", function () {
   return del("build");
@@ -24,7 +26,8 @@ gulp.task("copy", function () {
   return gulp.src([
     "fonts/**/*.{woff,woff2}",
     "img/**",
-    "js/**"
+    "js/**",
+    "css/*"
   ], {
   base: "."
   })
@@ -63,11 +66,23 @@ gulp.task("html", function () {
     .pipe(gulp.dest("build"));
 });
 
-gulp.task("webp", function () {
+gulp.task("exportWebP", function () {
+  let src = "img/**/*.{png,jpg}";
+  let dest ="/img";
   return gulp.src("img/**/*.{png,jpg}")
-    .pipe(webp({quality: 90}))
-    .pipe(gulp.dest("img"));
+  .pipe(imagemin([
+    webp({
+      quality: 100
+    })
+  ]))
+  .pipe(extReplace(".webp"))
+  .pipe(gulp.dest("img"));
 });
+//gulp.task("webp", function () {
+//  return gulp.src("img/**/*.{png,jpg}")
+ //   .pipe(webp({quality: 90}))
+//    .pipe(gulp.dest("img"));
+//});
 
 gulp.task("images", function () {
   return gulp.src("img/**/*.{png,jpg,svg}")
@@ -81,7 +96,7 @@ gulp.task("images", function () {
 
 gulp.task("serve", function() {
   server.init({
-    server: "build/",
+    server: "/build",
     notify: false,
     open: true,
     cors: true,

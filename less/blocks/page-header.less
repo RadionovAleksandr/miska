@@ -42,13 +42,22 @@
         @media (max-width: @desktop-width) {
             margin: 20px 0;
             margin-left: 50px;
+            width: 110px;
         }
         @media (max-width: @tablet-width) {
-            margin: 15px auto;
+            margin: 21px auto;
         }
     }
     &__logo-img {
-        width: 100px;
+        width: 160px;
+        margin: 10px;
+    }
+    &__logo-img:hover,
+    &__logo-img:focus {
+        opacity: 0.6;
+    }
+    &__logo-img:active {
+        opacity: 0.3;
     }
     &__search-box {
         display: flex;
@@ -63,34 +72,64 @@
         }
         @media (max-width: @tablet-width) {
             display: none;
+            border-right: none;
         }
     }
     &__search {
         height: 100%;
+        width: 100%;
+        justify-content: center;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         @media (max-width: @tablet-width) {
-            width: 190px;
+            justify-content: flex-start;
             position: relative;
+            min-width: 200px;
+            padding: 27px 0;
+            padding-left: 37%;
         }
     }
     &__search-img {
+        fill: #d3d2d2;
         width: 18px;
         height: 19px;
         @media (max-width: @tablet-width) {
-            margin-top: -9px;
-            position: absolute;
-            top: 50%;
-            left: -77px;
+            margin-left: -50px;
         }
+    }
+    &__search:hover .page-header__search-img,
+    &__search:focus .page-header__search-img {
+        fill: #63d1bb;
+    }
+    &__search:active .page-header__search-img {
+        fill: #d0f1ea;
+    }
+
+    &__search:hover .page-header__search-text,
+    &__search:focus .page-header__search-text {
+        opacity: 0.6;
+    }
+    &__search:active .page-header__search-text {
+        opacity: 0.3;
     }
     &__search-text {
         display: none;
         @media (max-width: @tablet-width) {
             display: flex;
-            margin: 28px 0;
+            margin-left: 25px;
             font-weight: bold;
+            font-size: 17px;
+        }
+    }
+    &__link {
+        @media (max-width: @tablet-width) {
+            padding: 27px 37%;
+            min-width: 290px;
+            position: relative;
+            left: 50%;
+            margin-left: -50%;
+            font-size: 17px;
         }
     }
     &__text {
@@ -101,6 +140,10 @@
         font-weight: normal;
         font-size: 15px;
         color: #444444;
+        @media (max-width: @desktop-width) {
+            padding: 15px 0;
+            margin-right: 60px;
+        }
         @media (max-width: @tablet-width) {
             display: none;
         }

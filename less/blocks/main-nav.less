@@ -65,6 +65,15 @@
     }
 }
 
+.site-list__item:hover,
+.site-list__item:focus {
+    opacity: 0.6;
+}
+
+.site-list__item:active {
+    opacity: 0.3;
+}
+
 .site-list__item {
     text-align: left;
     font-weight: bold;
@@ -72,10 +81,17 @@
     padding: 32px 0;
     padding-right: 33px;
     list-style: none;
+    @media (max-width: @desktop-width) {
+        font-size: 15px;
+        padding: 0;
+        margin: 20px 0;
+    }
     @media (max-width: @tablet-width) {
-        padding: 28px 130%;
+       position: relative;
+        display: flex;
+        margin: 0;
         border-top: 2px solid #ececec;
-        width: 190px;
+        width: 100%;
     }
     &--bottom {
         padding: 25px 0;
@@ -83,11 +99,10 @@
     }
 }
 
-/*Эксперементы*/
+/*Классы для добавления*/
 
 .main-nav {
     &__toggle--active::before {
-        //Класс для навешивания
         content: "";
         position: absolute;
         top: 12px;
@@ -98,7 +113,6 @@
         transform: rotate(45deg)
     }
     &__toggle--active::after {
-        //Класс для навешивания
         content: "";
         position: absolute;
         top: 12px;

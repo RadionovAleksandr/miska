@@ -4,7 +4,7 @@
         max-width: 620px;
         min-width: 260px;
         margin: 0 auto;
-        padding-top: 155px;
+        padding-top: 90px;
         padding-bottom: 355px;
         font-size: 53px;
         line-height: 58.5px;
@@ -16,9 +16,11 @@
             padding-bottom: 370px;
         }
         @media (max-width: @tablet-width) {
+            margin: 0 50px;
             font-size: 27px;
             line-height: 30.74px;
-            padding-bottom: 390px;
+            padding-top: 60px;
+            padding-bottom: 120px;
         }
     }
     &__wrap {
@@ -31,6 +33,7 @@
         @media (max-width: @tablet-width) {
             margin: 0;
             flex-direction: column;
+            position: relative;
         }
     }
     &__item {
@@ -40,17 +43,49 @@
         @media (max-width: @tablet-width) {
             width: 100%;
             background-position: 85% 40%;
+            margin-bottom: -5px;
         }
     }
+    &__item:hover,
+    &__item:focus {
+        position: relative;
+        bottom: 5px;
+    }
+    @media (max-width: @tablet-width) {
+        &__item--toys:hover,
+        &__item--toys:focus {
+            position: relative;
+            bottom: 5px;
+            padding-bottom: 5px;
+            margin-bottom: -10px;
+        }
+    }
+    &__item:active .service__text {
+        opacity: 0.3;
+    } //проверить почему не работает подгрузка картинок
     &__item--interior {
         background-color: #63d1bb;
-        background-image: url("../img/interior.svg");
+        background-image: url("../img/icon-interior.svg");
         background-size: 46px;
+    }
+    &__item .service__item--interior:hover,
+    &__item .service__item--interior:focus {
+        background-image: url("../img/icon-toy-svg--hover.svg");
+    }
+    &__item .service__item--interior:active {
+        background-image: url("../img/icon-toy-svg--active.svg");
     }
     &__item--toys {
         background-color: #56c3b2;
-        background-image: url("../img/toy-svg.svg");
+        background-image: url("../img/icon-toy-svg.svg");
         background-size: 57px;
+    }
+    &__item .service__item--interior:hover,
+    &__item .service__item--interior:focus {
+        background-image: url("../img/icon-interior--hover.svg");
+    }
+    &__item .service__item--interior:active {
+        background-image: url("../img/icon-interior--active.svg");
     }
     &__text {
         width: 125px;
@@ -61,6 +96,11 @@
         line-height: 30px;
         font-weight: bold;
         color: white;
+        @media (max-width: @tablet-width) {
+            margin: 22px 0;
+            margin-left: 36px;
+            font-size: 18px;
+        }
     }
     &__zigzag-img {
         width: 100%;
@@ -71,5 +111,8 @@
         background-repeat: repeat-x;
         background-position: 0% 100%;
         background-size: 5%;
+        @media(max-width: @tablet-width) {
+            background-image: none;
+        }
     }
 }

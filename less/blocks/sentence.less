@@ -4,18 +4,18 @@
     justify-content: flex-start; //тут неразобрался почему флекс элемент не поджимается под контент
     position: relative;
     margin: 0 auto;
-    padding-top: 130px;
+    padding-top: 110px;
     width: 100%;
     background-image: url("../img/zigzag-line-desktop.svg");
     background-repeat: repeat-x;
     background-position: 0 795px;
     background-size: 5%;
     @media (max-width: @desktop-width) {
-        padding-top: 60px;
+        padding-top: 25px;
         background-position: 0 100%;
     }
     @media (max-width: @tablet-width) {
-        padding-top: 35px;
+        padding-top: 0;
     }
     &__title-wrap {
         display: flex;
@@ -31,7 +31,7 @@
         }
         @media (max-width: @tablet-width) {
             position: static;
-            margin-left: 50px;
+            margin-left: 30px;
         }
     }
     &__product-week {
@@ -49,7 +49,7 @@
         }
         @media (max-width: @tablet-width) {
             margin-left: 0;
-            margin-bottom: 32px;
+            margin-bottom: 15px;
             width: 260px;
             text-align: left;
         }
@@ -87,6 +87,7 @@
         width: 350px;
         margin-left: 275px;
         @media(max-width: @desktop-width) {
+            max-width: 300px;
             margin-left: 8%;
             width: 50%;
             order: 0;
@@ -94,6 +95,7 @@
         }
         @media(max-width: @tablet-width) {
             margin: 35px;
+            margin-top: 0;
             width: 260px;
             order: 0;
         }
@@ -103,6 +105,14 @@
         line-height: 30px;
         margin: 0;
         margin-bottom: 47px;
+        @media(max-width: @desktop-width) {
+            margin-bottom: 37px;  
+        }
+        @media(max-width: @desktop-width) { 
+            line-height: 24px;
+            font-size: 15px;
+            margin-bottom: 15px;
+        }
     }
     &__price {
         max-width: 290px;
@@ -111,12 +121,13 @@
         font-size: 20px;
         font-weight: bold;
         @media(max-width: @desktop-width) {
-            margin-top: 60px;
+            margin-top: 50px;
         }
         @media(max-width: @tablet-width) {
             position: absolute;
-            bottom: 125px;
+            bottom: 140px;
             left: 92.5px;
+            font-size: 16px;
         }
     }
     &__order-week-btn {
@@ -128,7 +139,7 @@
         @media (max-width: @tablet-width) {
             margin-left: 35px;
             position: absolute;
-            bottom: 40px;
+            bottom: 55px;
             left: 0;
             width: 260px;
             padding: 16px 0;
@@ -147,11 +158,15 @@
         @media(max-width: @desktop-width) {
             position: static;
             width: 334px;
+            margin-left: auto;
+            margin-top: 15px;
+            margin-right: 8.3%;
         }
         @media(max-width: @tablet-width) {
             position: static;
             width: 260px;
             margin: 35px;
+            margin-top: 0;  
             margin-bottom: 170px;
         }
     }
