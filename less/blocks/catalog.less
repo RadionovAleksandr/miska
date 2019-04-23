@@ -1,6 +1,9 @@
 .catalog {
     display: flex;
     flex-wrap: wrap;
+    @media (max-width: @tablet-width) {
+        align-items: flex-start;
+    }
     &__title {
         font-size: 53px;
         font-weight: bold;
@@ -10,12 +13,30 @@
         margin: 0 auto;
         padding-top: 50px;
         padding-bottom: 115px;
-        margin-bottom: 25px;
         @media (max-width: @desktop-internal-width) {
             width: 1149px;
+            letter-spacing: 2.2px;
+            font-size: 40px;
+            padding-top: 50px;
+            padding-bottom: 85px;
+            letter-spacing: 0.4px;
         }
         @media (max-width: @tablet-width) {
             font-size: 27px;
+            margin-bottom: 0;
+        }
+    }
+    &__zigzag-img {
+        width: 100%;
+        min-height: 70px;
+        position: relative;
+        top: -55px;
+        background-image: url("../img/zigzag-fill-desktop.svg");
+        background-repeat: repeat-x;
+        background-position: 0% 100%;
+        background-size: 5%;
+        @media(max-width: @tablet-width) {
+            display: none;
         }
     }
 }

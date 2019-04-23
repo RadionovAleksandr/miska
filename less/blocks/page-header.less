@@ -13,10 +13,10 @@
         border-bottom: 2px solid #ececec;
         min-height: 83px;
     }
-    &--inernal {
+    &--internal {
         max-width: 1150px;
         @media (max-width: @desktop-internal-width) {
-            max-width: 1159px;
+            max-width: 1149px;
         }
     }
     &__wrap {
@@ -39,6 +39,7 @@
     }
     &__logo {
         margin: auto;
+        margin-top: 10px;
         @media (max-width: @desktop-width) {
             margin: 20px 0;
             margin-left: 50px;
@@ -50,7 +51,6 @@
     }
     &__logo-img {
         width: 160px;
-        margin: 10px;
     }
     &__logo-img:hover,
     &__logo-img:focus {
@@ -136,7 +136,7 @@
         margin: 0;
         margin-left: auto;
         margin-right: 83px;
-        padding: 25px 0;
+        padding: 20px 0;
         font-weight: normal;
         font-size: 15px;
         color: #444444;
@@ -146,6 +146,9 @@
         }
         @media (max-width: @tablet-width) {
             display: none;
+        }
+        &--internal {
+            margin-right: 50px;
         }
     }
 }

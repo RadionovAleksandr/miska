@@ -19,7 +19,16 @@
         width: 100%;
         margin: 0;
         padding-top: 50px;
-        padding-bottom: 115px
+        padding-bottom: 105px;
+        @media (max-width: @desktop-internal-width) {
+            font-size: 42px;
+            padding-bottom: 70px;
+        }
+        @media (max-width: @tablet-width) {
+            font-size: 35px;
+            padding-top: 95px;
+            padding-bottom: 65px;
+        }
     }
     &__image {
         min-height: 35px;

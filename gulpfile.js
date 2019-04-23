@@ -9,7 +9,7 @@ var include = require("posthtml-include");
 var autoprefixer = require("autoprefixer");
 var minify = require("gulp-csso");
 var imagemin = require("gulp-imagemin");
-var webp = require("gulp-webp");
+//var webpgulp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
 var rename = require ("gulp-rename");
 var server = require("browser-sync").create();
@@ -17,6 +17,9 @@ var run = require ("run-sequence");
 var del = require("del");
 var webp = require("imagemin-webp");
 var extReplace = require("gulp-ext-replace");
+var htmlmin = require('gulp-htmlmin');
+var uglify = require('gulp-uglify');
+var pipeline = require('readable-stream').pipeline;
 
 gulp.task("clean", function () {
   return del("build");
@@ -58,26 +61,34 @@ gulp.task("sprite", function () {
     .pipe(gulp.dest("build/img"));
 });
 
-gulp.task("html", function () {
-  return gulp.src("*.html")
-    .pipe(posthtml([
-      include()
-    ]))
-    .pipe(gulp.dest("build"));
+gulp.task('htmlmin', function() {
+  return gulp.src('*.html')
+  .pipe(posthtml([
+     include()
+     ]))
+  .pipe(htmlmin({ collapseWhitespace: true }))
+  .pipe(gulp.dest('build'));
+});
+
+//не робит
+gulp.task('compress', function () {
+  return pipeline(
+        gulp.src('*.js'),
+        uglify(),
+        gulp.dest('build')
+  );
 });
 
 gulp.task("exportWebP", function () {
   let src = "img/**/*.{png,jpg}";
-  let dest ="/img";
+  let dest ="img";
+  
   return gulp.src("img/**/*.{png,jpg}")
-  .pipe(imagemin([
-    webp({
-      quality: 100
-    })
-  ]))
-  .pipe(extReplace(".webp"))
-  .pipe(gulp.dest("img"));
+    .pipe(imagemin([webp({quality:88})]))
+    .pipe(extReplace(".webp"))
+    .pipe(gulp.dest("img"));
 });
+
 //gulp.task("webp", function () {
 //  return gulp.src("img/**/*.{png,jpg}")
  //   .pipe(webp({quality: 90}))
@@ -104,9 +115,9 @@ gulp.task("serve", function() {
   });
 
   gulp.watch("less/**/*.less", ["style"]);
-  gulp.watch("*.html", ["html"]);
+  gulp.watch("*.html", ["htmlmin"]);
 });
 
 gulp.task("build", function (done) {
-  run("clean", "copy", "style", "sprite", "html", done);
+  run("clean", "copy", "style", "sprite", "htmlmin", done);
 });
