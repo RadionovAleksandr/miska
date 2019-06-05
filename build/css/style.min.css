@@ -835,7 +835,7 @@ tbody {
     width: 100%;
     min-height: 40px;
     position: absolute;
-    bottom: -1px;
+    bottom: -1.5px;
     background-image: url("../img/zigzag-fill-desktop.png");
     background-repeat: no-repeat;
     background-position: 0% 100%;
@@ -844,7 +844,6 @@ tbody {
 @media (max-width: 1200px) {
     .service__zigzag-img {
         background-image: url("../img/zigzag-fill-tablet.png");
-        bottom: -1px;
         background-repeat: repeat-x;
     }
 }
