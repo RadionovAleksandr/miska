@@ -4,8 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>mishka</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic,cyrillic-ext,latin-ext"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,10 +17,10 @@
     </div>
     <header class="page-header page-header--internal">
         <div class="page-header__wrap page-header__wrap--top">
-            <a class="page-header__logo" href="#">
+            <a class="page-header__logo" href="index.html">
                 <picture class="page-header__logo-img">
                     <source media="(max-width: 768px)" srcset="img/mishka-logo-mobile.svg">
-                    <source media="(max-width: 1250px)" srcset="img/mishka-logo-tablet.svg" viewport="0 0 100 50">
+                    <source media="(max-width: 1200px)" srcset="img/mishka-logo-tablet.svg">
                     <img src="img/mishka-logo-desktop.svg" alt="Логотип">
                 </picture>
             </a>
@@ -48,7 +47,7 @@
             <div class="basket basket--internal">
                 <a class="basket__field" href="#">
                     <svg class="basket__img">
-                        <use xlink:href="#icon-cart" alt="корзина"></use>
+                        <use xlink:href="#icon-cart"></use>
                     </svg>
                     <div class="basket__text">Корзина: пока пуста</div>
                 </a>
@@ -77,19 +76,16 @@
         <div class="page-main-form__wrap">
             <h1 class="page-main-form__title">Вязание на заказ</h1>
             <div class="page-main-form__image">
-                <img src="#" alt="">
             </div>
         </div>
         <form class="knitting-order" action="#" method="GET">
-            <p class="knitting-order__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую
-                форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+            <p class="knitting-order__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
             <div class="form-order form-order--kind">
                 <div class="form-order__title">Тип</div>
                 <div class="form-order__wrap">
                     <div class="form-order__input-wrap">
                         <label class="form-order__login-radio" for="typeInterior">
-                            <input class="form-order__radio hidden" id="typeInterior" type="radio" name="type"
-                                value="interior">
+                            <input class="form-order__radio hidden" id="typeInterior" type="radio" name="type" value="interior">
                             <span class="form-order__radio-indicator"></span>Аксессуар для интерьера
                         </label>
                     </div>
@@ -107,48 +103,42 @@
                     <div class="form-order__column">
                         <div class="form-order__item form-order__item--top">
                             <label class="form-order__login-checkbox" for="colorWhite">
-                                <input class="form-order__checkbox hidden" id="colorWhite" type="checkbox" name="white"
-                                    value="color">
-                                <span class="checkbox-indicator"></span>
+                                <input class="form-order__checkbox hidden" id="colorWhite" type="checkbox" name="white" value="color">
+                                <span class="form-order__checkbox-indicator"></span>
                                 Белый</label>
                         </div>
                         <div class="form-order__item form-order__item--top">
                             <label class="form-order__login-checkbox" for="colorBlack">
-                                <input class="form-order__checkbox hidden" id="colorBlack" type="checkbox" name="black"
-                                    value="color">
-                                <span class="checkbox-indicator"></span>
+                                <input class="form-order__checkbox hidden" id="colorBlack" type="checkbox" name="black" value="color">
+                                <span class="form-order__checkbox-indicator"></span>
                                 Черный</label>
                         </div>
                     </div>
                     <div class="form-order__column">
                         <div class="form-order__item form-order__item--top">
                             <label class="form-order__login-checkbox" for="colorGrey">
-                                <input class="form-order__checkbox hidden" id="colorGrey" type="checkbox" name="grey"
-                                    value="color">
-                                <span class="checkbox-indicator"></span>
+                                <input class="form-order__checkbox hidden" id="colorGrey" type="checkbox" name="grey" value="color">
+                                <span class="form-order__checkbox-indicator"></span>
                                 Серый</label>
                         </div>
                         <div class="form-order__item form-order__item--top">
                             <label class="form-order__login-checkbox" for="colorPink">
-                                <input class="form-order__checkbox hidden" id="colorPink" type="checkbox" name="pink"
-                                    value="color">
-                                <span class="checkbox-indicator"></span>
+                                <input class="form-order__checkbox hidden" id="colorPink" type="checkbox" name="pink" value="color">
+                                <span class="form-order__checkbox-indicator"></span>
                                 Розовый</label>
                         </div>
                     </div>
                     <div class="form-order__column">
                         <div class="form-order__item form-order__item--top">
                             <label class="form-order__login-checkbox" for="colorTiffani">
-                                <input class="form-order__checkbox  hidden" id="colorTiffani" type="checkbox"
-                                    name="tiffani" value="color">
-                                <span class="checkbox-indicator"></span>"Тиффани"
+                                <input class="form-order__checkbox  hidden" id="colorTiffani" type="checkbox" name="tiffani" value="color">
+                                <span class="form-order__checkbox-indicator"></span>"Тиффани"
                             </label>
                         </div>
                         <div class="form-order__item form-order__item--top">
                             <label class="form-order__login-checkbox " for="colorOrange">
-                                <input class="form-order__checkbox hidden" id="colorOrange" type="checkbox"
-                                    name="orange" value="color">
-                                <span class="checkbox-indicator"></span>Оранжевый
+                                <input class="form-order__checkbox hidden" id="colorOrange" type="checkbox" name="orange" value="color">
+                                <span class="form-order__checkbox-indicator"></span>Оранжевый
                             </label>
 
                         </div>
@@ -160,42 +150,43 @@
                 <div class="form-order__name-data-wrap">
                     <div class="form-order__item form-order__item--middle">
                         <label for="textName">Имя:</label>
-                        <input class="form-order__text" id="textName" type="text" name="name"
-                            placeholder="Введите ваше имя*">
+                        <input class="form-order__text" id="textName" type="text" name="name" placeholder="Введите ваше имя*" required="">
 
                     </div>
                     <div class="form-order__item form-order__item--middle">
                         <label for="textSecondname">Фамилия:</label>
-                        <input class="form-order__text" id="textSecondname" type="text" name="Secondname"
-                            placeholder="Введите вашу фамилию*">
+                        <input class="form-order__text" id="textSecondname" type="text" name="Secondname" placeholder="Введите вашу фамилию*" required="">
 
                     </div>
                     <div class="form-order__item form-order__item--middle">
                         <label for="textPatronymic">Отчество:</label>
-                        <input class="form-order__text" id="textPatronymic" type="text" name="Patronymic"
-                            placeholder="Отчество, если желаете">
+                        <input class="form-order__text" id="textPatronymic" type="text" name="Patronymic" placeholder="Отчество, если желаете">
 
                     </div>
                 </div>
             </div>
             <div class="form-order form-order--contacts">
                 <div class="form-order__item form-order__item--bottom">
-                    <label class="form-order__title" for="userPhone">Тел</label>
-                    <input class="form-order__text form-order__phone" id="userPhone" type="text" name="phone"
-                        placeholder="+7XXX XX XX*" required="">
+                    <label class="form-order__title form-order__title--contacts" for="userPhone">Тел</label>
+                    <input class="form-order__text form-order__phone" id="userPhone" type="text" name="phone" placeholder="+7XXX XX XX*" required="">
+                    <svg class="form-order__img">
+                        <use xlink:href="#icon-phone"></use>
+                    </svg>
                 </div>
                 <div class="form-order__item form-order__item--bottom">
-                    <label class="form-order__title" for="userMail">e-mail</label>
-                    <input class="form-order__text form-order__mail" id="userMail" type="email" name="email"
-                        placeholder="Ваш Email*" required="">
-                </div>
-                <div class="form-order__item form-order__item--bottom">
-                    <label class="form-order__title" id="add-info">Доп</label>
-                    <textarea class="form-order__add-info" name="add-info" rows="10"
-                        placeholder="Опишите все ваши пожелания к заказу">
-                    </textarea>
+                    <label class="form-order__title form-order__title--contacts" for="userMail">e-mail</label>
+                    <input class="form-order__text form-order__mail" id="userMail" type="email" name="email" placeholder="Ваш Email*" required="">
+                    <svg class="form-order__img">
+                        <use xlink:href="#icon-mail"></use>
+                    </svg>
                 </div>
             </div>
+            <div class="form-order__item form-order__item--textarea">
+                <label class="form-order__title" id="add-info">Доп</label>
+                <textarea class="form-order__add-info" name="add-info" rows="10" placeholder="Опишите все ваши пожелания к заказу">
+                    </textarea>
+            </div>
+
             <div class="form-order__wrap-btn">
                 <button class="form-order__btn button">Отправить заказ</button>
                 <div class="form-order__add-text">*Поля обязательны для заполнения</div>
@@ -205,26 +196,26 @@
 
     <footer class="page-footer page-footer--internal">
         <div class="page-footer__column page-footer__column--left">
-                <a class="page-footer__logo" href="index.html">
+            <a class="page-footer__logo" href="index.html">
                 <svg class="page-footer__logo-img">
-                    <use xlink:href="#icon-logo-footer" alt="логотип"></use>
+                    <use xlink:href="#icon-logo-footer"></use>
                 </svg>
             </a>
         </div>
         <div class="page-footer__column page-footer__column--middle">
             <a class="page-footer__social-web-item" href="#">
                 <svg class="page-footer__social-img page-footer__social-img--inst">
-                    <use xlink:href="#icon-insta" alt="инстаграмм"></use>
+                    <use xlink:href="#icon-insta"></use>
                 </svg>
             </a>
             <a class="page-footer__social-web-item" href="#">
                 <svg class="page-footer__social-img page-footer__social-img--fb">
-                    <use xlink:href="#icon-fb" alt="фейсбук"></use>
+                    <use xlink:href="#icon-fb"></use>
                 </svg>
             </a>
             <a class="page-footer__social-web-item" href="#">
                 <svg class="page-footer__social-img page-footer__social-img--tw">
-                    <use xlink:href="#icon-twitter" alt="твиттер"></use>
+                    <use xlink:href="#icon-twitter"></use>
                 </svg>
             </a>
         </div>
@@ -232,7 +223,7 @@
             <a class="page-footer__developer">
                 <div class="page-footer__text">Разработано</div>
                 <svg class="page-footer__img-dev">
-                    <use xlink:href="#icon-htmlacademy" alt="логотип разработчика"></use>
+                    <use xlink:href="#icon-htmlacademy"></use>
                 </svg>
             </a>
         </div>
